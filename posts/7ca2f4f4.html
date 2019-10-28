@@ -77,7 +77,6 @@
 
 
 
-  <meta name="keywords" content="你好,">
 
 
 
@@ -87,21 +86,20 @@
 
 
 
-
-<meta name="description" content="hello;">
-<meta name="keywords" content="你好">
+<meta name="description" content="【系统编程】进程 资源管理的最小单位  [toc]{level: [2]}  进程基本概念 什么是进程？：UNIX标准把进程定义为：一个其中运行着一个或者多个线程的地址空间和这些线程所需要的系统资源。我们可以把进程看做正在运行的程序。 程序和进程：程序是一堆待执行的代码。  -&amp;gt; 静态的文本数据。  project.c (C程序) /  project (可执行程序) 高拓展性：可在文档中嵌">
+<meta name="keywords" content="C,C++,linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="你好">
-<meta property="og:url" content="http://qqcu.github.io/article/50a2b841.html">
+<meta property="og:title" content="系统编程(一)">
+<meta property="og:url" content="http://qqcu.github.io/posts/7ca2f4f4.html">
 <meta property="og:site_name" content="Curran的博客">
-<meta property="og:description" content="hello;">
+<meta property="og:description" content="【系统编程】进程 资源管理的最小单位  [toc]{level: [2]}  进程基本概念 什么是进程？：UNIX标准把进程定义为：一个其中运行着一个或者多个线程的地址空间和这些线程所需要的系统资源。我们可以把进程看做正在运行的程序。 程序和进程：程序是一堆待执行的代码。  -&amp;gt; 静态的文本数据。  project.c (C程序) /  project (可执行程序) 高拓展性：可在文档中嵌">
 <meta property="og:locale" content="-zh-CN -en">
-<meta property="og:image" content="http://qqcu.github.io/article/50a2b841.htm/linusystem.png">
-<meta property="og:updated_time" content="2019-10-28T02:47:27.040Z">
+<meta property="og:image" content="http://qqcu.github.io/posts/7ca2f4f4.htm/1.png">
+<meta property="og:updated_time" content="2019-10-28T02:47:27.265Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="你好">
-<meta name="twitter:description" content="hello;">
-<meta name="twitter:image" content="http://qqcu.github.io/article/50a2b841.htm/linusystem.png">
+<meta name="twitter:title" content="系统编程(一)">
+<meta name="twitter:description" content="【系统编程】进程 资源管理的最小单位  [toc]{level: [2]}  进程基本概念 什么是进程？：UNIX标准把进程定义为：一个其中运行着一个或者多个线程的地址空间和这些线程所需要的系统资源。我们可以把进程看做正在运行的程序。 程序和进程：程序是一堆待执行的代码。  -&amp;gt; 静态的文本数据。  project.c (C程序) /  project (可执行程序) 高拓展性：可在文档中嵌">
+<meta name="twitter:image" content="http://qqcu.github.io/posts/7ca2f4f4.htm/1.png">
 
 
 
@@ -131,7 +129,7 @@
 
 
 
-  <link rel="canonical" href="http://qqcu.github.io/article/50a2b841.html">
+  <link rel="canonical" href="http://qqcu.github.io/posts/7ca2f4f4.html">
 
 
 
@@ -156,7 +154,7 @@
 <!-- fontawesome5 -->
 <link href="/lib/font-awesome/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
 
-  <title>你好 | Curran的博客</title>
+  <title>系统编程(一) | Curran的博客</title>
   
 
 
@@ -304,7 +302,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://qqcu.github.io/article/50a2b841.html">
+    <link itemprop="mainEntityOfPage" href="http://qqcu.github.io/posts/7ca2f4f4.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Curran">
@@ -321,7 +319,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">你好</h2>
+          <h2 class="post-title" itemprop="name headline">系统编程(一)</h2>
         
 
         <div class="post-meta">
@@ -335,8 +333,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-08-21T16:55:01+08:00">
-                2019-08-21
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-25T22:20:37+08:00">
+                2019-09-25
               </time>
             
 
@@ -354,8 +352,8 @@
                 <span class="post-meta-item-icon">
                   <i class="far fa-comment-dots"></i>
                 </span>
-                <a href="/article/50a2b841.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/article/50a2b841.html" itemprop="commentCount"></span>
+                <a href="/posts/7ca2f4f4.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/posts/7ca2f4f4.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -415,8 +413,29 @@
       
 
       
-        <p>hello;</p>
-<p><img src="/article/50a2b841.htm/linusystem.png" alt="aaa"></p>
+        <h1 id="【系统编程】进程"><a href="#【系统编程】进程" class="headerlink" title="【系统编程】进程"></a>【系统编程】进程</h1><blockquote>
+<p>资源管理的最小单位</p>
+</blockquote>
+<p>[toc]{level: [2]}</p>
+<p><img src="/posts/7ca2f4f4.htm/1.png" alt="截图"></p>
+<h2 id="进程基本概念"><a href="#进程基本概念" class="headerlink" title="进程基本概念"></a>进程基本概念</h2><ul>
+<li><strong>什么是进程？</strong>：<br>UNIX标准把进程定义为：一个其中运行着一个或者多个线程的地址空间和这些线程所需要的系统资源。我们可以把进程看做正在运行的程序。</li>
+<li><strong>程序和进程</strong>：<br>程序是一堆待执行的代码。  -&gt; 静态的文本数据。  project.c (C程序) /  project (可执行程序)</li>
+<li><strong>高拓展性</strong>：<br>可在文档中嵌入小工具、可运行的代码块、ECharts 图形、Plantuml 图形、Drawio 图形等</li>
+<li><strong>支持加密</strong>：<br>用来保存账号等隐私文件，文件可单独设置密码</li>
+</ul>
+<h2 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h2><ul>
+<li><strong>进程？</strong>：<br>UNIX标准把进程定义为：一个其中运行着一个或者多个线程的地址空间和这些线程所需要的系统资源。我们可以把进程看做正在运行的程序。</li>
+<li><strong>程序进程</strong>：<br>程序是一堆待执行的代码。  -&gt; 静态的文本数据。  project.c (C程序) /  project (可执行程序)</li>
+<li><strong>高拓性</strong>：<br>可在文档中嵌入小工具、可运行的代码块、ECharts 图形、Plantuml 图形、Drawio 图形等</li>
+<li><strong>加密</strong>：<br>用来保存账号等隐私文件，文件可单独设置密码</li>
+</ul>
+<h2 id="程"><a href="#程" class="headerlink" title="程"></a>程</h2><ul>
+<li><strong>进程？</strong>：<br>UNIX标准把进程定义为：一个其中运行着一个或者多个线程的地址空间和这些线程所需要的系统资源。我们可以把进程看做正在运行的程序。</li>
+<li><strong>程序进程</strong>：<br>程序是一堆待执行的代码。  -&gt; 静态的文本数据。  project.c (C程序) /  project (可执行程序)</li>
+<li><strong>高拓性</strong>：<br>可在文档中嵌入小工具、可运行的代码块、ECharts 图形、Plantuml 图形、Drawio 图形等</li>
+<li><strong>加密</strong>：<br>用来保存账号等隐私文件，文件可单独设置密码</li>
+</ul>
 
       
     </div>
@@ -429,12 +448,6 @@
     
 
     <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/你好/" rel="tag"><i class="fas fa-tag"></i> 你好</a>
-          
-        </div>
       
 
       
@@ -450,7 +463,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="http://qqcu.github.io/article/50a2b841.html" title="你好">http://qqcu.github.io/article/50a2b841.html</a>
+    <a href="http://qqcu.github.io/posts/7ca2f4f4.html" title="系统编程(一)">http://qqcu.github.io/posts/7ca2f4f4.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -465,15 +478,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/posts/50a2b841.html" rel="next" title="你好">
+                <i class="fas fa-chevron-left"></i> 你好
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/article/7ca2f4f4.html" rel="prev" title="系统编程(一)">
-                系统编程(一) <i class="fas fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -528,8 +541,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -606,6 +628,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#【系统编程】进程"><span class="nav-number">1.</span> <span class="nav-text">【系统编程】进程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#进程基本概念"><span class="nav-number">1.1.</span> <span class="nav-text">进程基本概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#进程"><span class="nav-number">1.2.</span> <span class="nav-text">进程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#程"><span class="nav-number">1.3.</span> <span class="nav-text">程</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -836,7 +874,7 @@
     var isfetched = false;
     var isXml = true;
     // Search DB path;
-    var search_path = "";
+    var search_path = "search.xml";
     if (search_path.length === 0) {
       search_path = "search.xml";
     } else if (/json$/i.test(search_path)) {

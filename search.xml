@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>系统编程(一)</title>
+    <url>/posts/7ca2f4f4.html</url>
+    <content><![CDATA[<h1 id="【系统编程】进程"><a href="#【系统编程】进程" class="headerlink" title="【系统编程】进程"></a>【系统编程】进程</h1><blockquote>
+<p>资源管理的最小单位</p>
+</blockquote>
+<p>[toc]{level: [2]}</p>
+<p><img src="/posts/7ca2f4f4.htm/1.png" alt="截图"></p>
+<h2 id="进程基本概念"><a href="#进程基本概念" class="headerlink" title="进程基本概念"></a>进程基本概念</h2><ul>
+<li><strong>什么是进程？</strong>：<br>UNIX标准把进程定义为：一个其中运行着一个或者多个线程的地址空间和这些线程所需要的系统资源。我们可以把进程看做正在运行的程序。</li>
+<li><strong>程序和进程</strong>：<br>程序是一堆待执行的代码。  -&gt; 静态的文本数据。  project.c (C程序) /  project (可执行程序)</li>
+<li><strong>高拓展性</strong>：<br>可在文档中嵌入小工具、可运行的代码块、ECharts 图形、Plantuml 图形、Drawio 图形等</li>
+<li><strong>支持加密</strong>：<br>用来保存账号等隐私文件，文件可单独设置密码</li>
+</ul>
+<h2 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h2><ul>
+<li><strong>进程？</strong>：<br>UNIX标准把进程定义为：一个其中运行着一个或者多个线程的地址空间和这些线程所需要的系统资源。我们可以把进程看做正在运行的程序。</li>
+<li><strong>程序进程</strong>：<br>程序是一堆待执行的代码。  -&gt; 静态的文本数据。  project.c (C程序) /  project (可执行程序)</li>
+<li><strong>高拓性</strong>：<br>可在文档中嵌入小工具、可运行的代码块、ECharts 图形、Plantuml 图形、Drawio 图形等</li>
+<li><strong>加密</strong>：<br>用来保存账号等隐私文件，文件可单独设置密码</li>
+</ul>
+<h2 id="程"><a href="#程" class="headerlink" title="程"></a>程</h2><ul>
+<li><strong>进程？</strong>：<br>UNIX标准把进程定义为：一个其中运行着一个或者多个线程的地址空间和这些线程所需要的系统资源。我们可以把进程看做正在运行的程序。</li>
+<li><strong>程序进程</strong>：<br>程序是一堆待执行的代码。  -&gt; 静态的文本数据。  project.c (C程序) /  project (可执行程序)</li>
+<li><strong>高拓性</strong>：<br>可在文档中嵌入小工具、可运行的代码块、ECharts 图形、Plantuml 图形、Drawio 图形等</li>
+<li><strong>加密</strong>：<br>用来保存账号等隐私文件，文件可单独设置密码</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>你好</title>
+    <url>/posts/50a2b841.html</url>
+    <content><![CDATA[<p>hello;</p>
+<p><img src="/posts/50a2b841.htm/linusystem.png" alt="aaa"></p>
+]]></content>
+      <tags>
+        <tag>你好</tag>
+      </tags>
+  </entry>
+</search>
