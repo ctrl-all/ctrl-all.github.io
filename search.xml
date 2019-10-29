@@ -6,6 +6,9 @@
     <content><![CDATA[<p>test;</p>
 <p><img src="/posts/9daba997/linusystem.png" alt="aaa"></p>
 ]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
   </entry>
   <entry>
     <title>系统编程(一)</title>
