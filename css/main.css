@@ -1889,7 +1889,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #8696ff;
+  background: #a4d294;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3907,6 +3907,43 @@ section .post-body .fancybox img {
   text-align: left;
   word-wrap: break-word;
   word-break: break-all;
+}
+summary {
+  outline: 0;
+  cursor: pointer;
+  margin-top: 15px;
+}
+@media (max-width: 767px) {
+  summary {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+details {
+  margin-left: 20px;
+}
+@media (max-width: 767px) {
+  details .popular-posts {
+    margin: 5px -12px;
+  }
+}
+.popular-posts-header {
+  margin-top: 45px;
+  font-size: 20px;
+  font-weight: 900;
+  border-bottom: 1px solid #eee;
+}
+@media (max-width: 767px) {
+  .popular-posts-header {
+    font-size: 18px;
+    margin-top: 25px;
+  }
+}
+ul.popular-posts .popular-posts-item .popular-posts-title a {
+  border-bottom: 1px solid #999;
+}
+ul.popular-posts .popular-posts-item .popular-posts-title a:hover {
+  border-bottom: none;
 }
 @-moz-keyframes play {
   0% {
