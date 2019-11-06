@@ -1,51 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>测试</title>
-    <url>/posts/9daba997/</url>
-    <content><![CDATA[<p>test;</p>
-<p><img src="/posts/9daba997/linusystem.png" alt="aaa"></p>
+    <title>[嵌入式底层驱动笔记]uboot_1</title>
+    <url>/posts/58333f6c/</url>
+    <content><![CDATA[<h1 id="uboot操作"><a href="#uboot操作" class="headerlink" title="uboot操作"></a>uboot操作</h1><blockquote>
+<p>探寻嵌入式系统移植的世界</p>
+</blockquote>
+<h2 id="一、驱动："><a href="#一、驱动：" class="headerlink" title="一、驱动："></a>一、驱动：</h2><p>什么叫驱动？驱动就是计算机程序访问硬件的一个接口，这个接口是由操作系统提供。因为在操作系统涉及到安全管理机制，应用层程序不能够直接访问硬件，需要通过驱动函数接口来访问硬件。</p>
+<h2 id="二、启动过程"><a href="#二、启动过程" class="headerlink" title="二、启动过程"></a>二、启动过程</h2><p>mermaid<br>graph TD<br>   上电 –&gt; uboot –&gt; 加载linux内核 –&gt; 挂载根文件系统 –&gt; 执行应用程序</p>
+<h2 id="三、uboot"><a href="#三、uboot" class="headerlink" title="三、uboot"></a>三、uboot</h2><h3 id="1-什么是uboot"><a href="#1-什么是uboot" class="headerlink" title="1.什么是uboot"></a>1.什么是uboot</h3><p>uboot其实就是一个通用的引导程序——bootloader。</p>
+<p>boot，完成硬件的初始化，启动硬件平台<br>loader，初始化硬件后，加载操作系统。</p>
+<pre><code>支持各种硬件，例如支持ARM、MIPS、X86、AVR32架构....
+支持各种操作系统，例如支持WinCE、Linux内核、安卓操作系统....</code></pre><h3 id="2-uboot的作用"><a href="#2-uboot的作用" class="headerlink" title="2.uboot的作用"></a>2.uboot的作用</h3><p>1）第一阶段初始化，CPU的初始化，用汇编语言来编写，初始化cache、MMU、时钟、看门狗、DDR3、eMMC…<br>2）第二阶段初始化，板级的初始化，一般来说用C语言来编写，初始化串口、网卡、usb、lcd<br>3）提供了很多工具，进入uboot命令行，使用uboot的命令<br>4）加载操作系统</p>
+<h3 id="3-uboot的输出信息"><a href="#3-uboot的输出信息" class="headerlink" title="3.uboot的输出信息"></a>3.uboot的输出信息</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">u-Boot 2014.07 (Nov 19 2017 - 09:52:45)</span><br><span class="line">PLL : [0] =  800000000, [1] =  800000000, [2] =  780000000, [3] =  800000000</span><br><span class="line">(0) PLL1: CPU  FCLK =  800000000, HCLK = 200000000 (G0)</span><br><span class="line">(7) PLL1: CPU  FCLK =  800000000, HCLK = 200000000 (G1)</span><br><span class="line">(2) PLL3: MEM  FCLK =  800000000, DCLK = 800000000, BCLK = 400000000, PCLK = 200000000</span><br><span class="line">(1) PLL0: BUS  BCLK =  400000000, PCLK = 200000000</span><br><span class="line">(8) PLL0: CCI4 BCLK =  400000000, PCLK = 200000000</span><br><span class="line">(3) PLL0: G3D  BCLK =  400000000</span><br><span class="line">(4) PLL0: CODA BCLK =  400000000, PCLK = 200000000</span><br><span class="line">(5) PLL0: DISP BCLK =  400000000, PCLK = 200000000</span><br><span class="line">(6) PLL0: HDMI PCLK =  133333333</span><br><span class="line">I2C:   ready</span><br><span class="line">DRAM:  1 GiB</span><br><span class="line">Heap = 0x44000000~0x46000000</span><br><span class="line">Code = 0x43c00000~0x43c83e48</span><br><span class="line">GLD  = 0x43bffeb8</span><br><span class="line">GLBD = 0x43bffe68</span><br><span class="line">SP   = 0x43bffe68,0x43bffe48(CURR)</span><br><span class="line">PC   = 0x43c066f0</span><br><span class="line">TAGS = 0x40000100 </span><br><span class="line">PAGE = 0x43c90000~0x43c9c000</span><br><span class="line">MACH = [4330]   </span><br><span class="line">VER  = 0      </span><br><span class="line">BOARD= [GEC6818]    </span><br><span class="line">MMC:   NXP DWMMC: 0, NXP DWMMC: 1, NXP DWMMC: 2</span><br><span class="line">In:    serial</span><br><span class="line">Out:   serial</span><br><span class="line">Err:   serial</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># DCDC_MODE(0x80): DCDC1[PFM], DCDC2[PFM], DCDC3[PFM], DCDC4[PWM], DCDC5[PWM] </span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># STATUS(0x00)   : 0xe4 0x10 </span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># IRQ(0x48)      : 0x00 0x00 0x00 0x00 0x00 </span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># CHG_TYPE       : ADP</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># BAT_VOL        : 0mV </span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># BAT_CAP        : 100%</span></span></span><br><span class="line">DONE: Logo bmp 300 by 300 (3bpp), len=270056 </span><br><span class="line">DRAW: 0x47000000 -&gt; 0x46000000 </span><br><span class="line">DONE: Logo bmp 300 by 300 (3bpp), len=270056 </span><br><span class="line">DRAW: 0x47000000 -&gt; 0x46000000 </span><br><span class="line">RGB: display.0</span><br><span class="line">MIPI: display.0</span><br><span class="line">DSIM_ESCMODE 1 : 0xc0</span><br><span class="line">DSIM_STATUS : 0x10010f</span><br><span class="line">MIPI clk:  420MHz </span><br><span class="line">DSIM_ESCMODE 2 : 0x0</span><br><span class="line">DSIM_STATUS : 0x10010f</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># Skip BAT Animation. </span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># IRQ(0x48)   : 0x00 0x00 0x00 0x00 0x00 </span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># chg_type    : ADP </span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># battery_vol : 0mV </span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># battery_cap : 100%</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># Booting </span></span></span><br><span class="line">Card did not respond to voltage select!</span><br><span class="line">Net:   GEC6818 mac init...</span><br><span class="line">dwmac.c0060000</span><br><span class="line">Hit any key to stop autoboot:  0 </span><br><span class="line"><span class="meta">GEC6818#</span><span class="bash"></span></span><br></pre></td></tr></table></figure>
+
+<h4 id="1）开发板信息"><a href="#1）开发板信息" class="headerlink" title="1）开发板信息"></a>1）开发板信息</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">GEC6818#</span><span class="bash"> bdinfo</span></span><br><span class="line">arch_number = 0x000010EA		//uboot针对具体硬件平台的ID，若跟linux内核ID不一致，不能启动内核&lt;br&gt;</span><br><span class="line">boot_params = 0x40000100		//uboot传递给内存启动参数的地址</span><br><span class="line">DRAM bank   = 0x00000000		//内存通道0</span><br><span class="line"><span class="meta">-&gt;</span><span class="bash"> start    = 0x40000000		//内存的地址地址</span></span><br><span class="line"><span class="meta">-&gt;</span><span class="bash"> size     = 0x40000000		//内存的大小为1GB</span></span><br><span class="line">eth0name    = dwmac.c0060000	//网卡的名字</span><br><span class="line">ethaddr     = 00:e2:1c:ba:e8:60	//网卡的MAC地址信息</span><br><span class="line">current eth = dwmac.c0060000	//当前所使用的网卡</span><br><span class="line">ip_addr     = 192.168.114.5		//网卡的IP地址</span><br><span class="line">baudrate    = 115200 bps		//串口波特率</span><br><span class="line">TLB addr    = 0x7FFF0000</span><br><span class="line">relocaddr   = 0x46000000		//linux内核执行的地址</span><br><span class="line">reloc off   = 0x00000000</span><br><span class="line">irq_sp      = 0x7DF6BF00</span><br><span class="line">sp start    = 0x43BFFE68</span><br></pre></td></tr></table></figure>
+
+<h4 id="2）查看uboot的环境变量，只要是环境变量，都可以进行自定义"><a href="#2）查看uboot的环境变量，只要是环境变量，都可以进行自定义" class="headerlink" title="2）查看uboot的环境变量，只要是环境变量，都可以进行自定义"></a>2）查看uboot的环境变量，只要是环境变量，都可以进行自定义</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">GEC6818#</span><span class="bash"> printenv</span></span><br><span class="line">baudrate=115200</span><br><span class="line">bootargs=lcd=at070tn92 tp=gslx680-linux root=/dev/mmcblk0p2 rw rootfstype=ext4</span><br><span class="line">bootcmd=ext4load mmc 2:1 0x48000000 uImage;bootm 0x48000000</span><br><span class="line">bootdelay=5</span><br><span class="line">bootfile=uImage</span><br><span class="line">ethact=dwmac.c0060000</span><br><span class="line">ethaddr=00:e2:1c:ba:e8:60</span><br><span class="line">ethprime=RTL8211</span><br><span class="line">fastboot=flash=mmc,2:GECuboot:2nd:0x200,0x78000;flash=mmc,2:2ndboot:2nd:0x200,0x4000;flash=mmc,2:bootloader:boot:0x8000,0x70000;flash=mmc,2:boot:ext4:0x00100000,0x04000000;flash=mmc,2:system:ext4:0x04100000,0x2F200000;flash=mmc,2:cache:ext4:0x33300000,0x1AC00000;flash=mmc,2:misc:emmc:0x4E000000,0x00800000;flash=mmc,2:recovery:emmc:0x4E900000,0x01600000;flash=mmc,2:userdata:ext4:0x50000000,0x0;</span><br><span class="line">filesize=41ee8</span><br><span class="line">gatewayip=192.168.114.1</span><br><span class="line">ipaddr=192.168.114.5</span><br><span class="line">netmask=255.255.255.0</span><br><span class="line">qtcrc=-314709120</span><br><span class="line">serverip=192.168.114.2</span><br><span class="line">stderr=serial</span><br><span class="line">stdin=serial</span><br><span class="line">stdout=serial</span><br></pre></td></tr></table></figure>
+
+<h4 id="关键的内容："><a href="#关键的内容：" class="headerlink" title="关键的内容："></a>关键的内容：</h4><h5 id="1）bootargs，启动参数"><a href="#1）bootargs，启动参数" class="headerlink" title="1）bootargs，启动参数"></a>1）bootargs，启动参数</h5><figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line"><span class="attribute">bootargs</span>=lcd=at070tn92 <span class="attribute">tp</span>=gslx680-linux <span class="attribute">root</span>=/dev/mmcblk0p2 rw <span class="attribute">rootfstype</span>=ext4</span><br></pre></td></tr></table></figure>
+
+<p>lcd=at070tn92，                //液晶屏的型号，7英寸的800*480的屏幕<br>tp=gslx680-linux，            //触摸屏的型号<br>root=/dev/mmcblk0p2，        //根文件系统在哪里，告诉内核去哪里挂载根文件系统。<br>mmcblk0p2<br>.mmcblk0，emmc        //电子硬盘0<br>.p2，partion2，emmc    //电子硬盘0的分区2</p>
+<p>rw，该文件系统可以读，又可以写。<br>rootfstype=ext4，该文件系统类型为ext4。（ext2/ext3，fat32，ntfs）。</p>
+<h5 id="2）启动命令"><a href="#2）启动命令" class="headerlink" title="2）启动命令"></a>2）启动命令</h5><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">bootcmd=ext4load mmc 2:1 0x48000000 uImage;bootm 0x48000000</span><br></pre></td></tr></table></figure>
+
+<p>以ext4文件系统去emmc第一个分区加载uImage linux内核镜像，加载到内存地址0x48000000；然后在该地址0x48000000启动linux内核。</p>
+<p>这条命令告诉uboot启动完之后，要干什么动作，通过bootcmd命令进行了解。</p>
+<h5 id="3）修改启动延时时间"><a href="#3）修改启动延时时间" class="headerlink" title="3）修改启动延时时间"></a>3）修改启动延时时间</h5><p><code>setenv bootdelay 3</code><br><code>saveenv</code></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Saving Environment to MMC...</span><br><span class="line">Writing to MMC(2)... done</span><br></pre></td></tr></table></figure>
+
+<h5 id="4）打印已经存在的环境变量"><a href="#4）打印已经存在的环境变量" class="headerlink" title="4）打印已经存在的环境变量"></a>4）打印已经存在的环境变量</h5><p>#printenv(pri)</p>
+<h5 id="5）复位开发板"><a href="#5）复位开发板" class="headerlink" title="5）复位开发板"></a>5）复位开发板</h5><p><code>reset</code></p>
+<h5 id="6）修改本地IP地址"><a href="#6）修改本地IP地址" class="headerlink" title="6）修改本地IP地址"></a>6）修改本地IP地址</h5><p><code>setenv ipaddr 192.168.11.6</code>            //修改IP地址<br><code>setenv gatewayip 192.168.11.1</code>        //修改网关<br><code>setenv netmask 255.255.255.0</code>        //修改子网掩码<br><code>saveenv</code></p>
+<p><strong>注意：</strong>在后面的课程设计网络下载裸机程序，网络必须要配置好，因为当前的uboot不支持串口下载文件。</p>
+<h5 id="7）验证网络的通畅"><a href="#7）验证网络的通畅" class="headerlink" title="7）验证网络的通畅"></a>7）验证网络的通畅</h5><p><code>ping 电脑IP地址</code></p>
+<p><strong>注意：</strong>开发板必须通过网线连接到电脑；电脑必须关闭防火墙；电脑不能主动ping开发板，因为uboot默认状态下是关闭了网卡。</p>
+<p>ping成功:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">GEC6818#</span><span class="bash"> ping 192.168.11.3</span></span><br><span class="line">Speed: 100, full duplex</span><br><span class="line">Using dwmac.c0060000 device</span><br><span class="line">host 192.168.11.3 is alive</span><br></pre></td></tr></table></figure>
+
+<p>ping失败:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">GEC6818#</span><span class="bash"> ping 192.168.11.3</span></span><br><span class="line">ping failed; host 192.168.11.3 is not alive</span><br></pre></td></tr></table></figure>
+
+<h5 id="8）修改服务器IP地址"><a href="#8）修改服务器IP地址" class="headerlink" title="8）修改服务器IP地址"></a>8）修改服务器IP地址</h5><p><code>#setenv serverip 192.168.11.3</code><br><code>#saveenv</code></p>
+<h5 id="9）删除对应的环境变量，例如删除sap变量"><a href="#9）删除对应的环境变量，例如删除sap变量" class="headerlink" title="9）删除对应的环境变量，例如删除sap变量"></a>9）删除对应的环境变量，例如删除sap变量</h5><p><code>#setenv sap</code><br><code>#saveenv</code></p>
+<h5 id="10）通过tftp下载文件到内存"><a href="#10）通过tftp下载文件到内存" class="headerlink" title="10）通过tftp下载文件到内存"></a>10）通过tftp下载文件到内存</h5><p><code>#tftp 文件名 内存地址</code><br><code>#tftp led.bin 0x40000000</code></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">GEC6818#</span><span class="bash"> tftp 0x40000000 led.bin</span></span><br><span class="line">Speed: 100, full duplex</span><br><span class="line">Using dwmac.c0060000 device</span><br><span class="line">TFTP from server 192.168.11.3; our IP address is 192.168.11.6</span><br><span class="line">Filename 'led.bin'.</span><br><span class="line">Load address: 0x40000000</span><br><span class="line">Loading: #</span><br><span class="line">         261.7 KiB/s</span><br><span class="line">done</span><br><span class="line">Bytes transferred = 4572 (11dc hex)</span><br></pre></td></tr></table></figure>
+
+<h5 id="11）执行某地址存在的二进制文件"><a href="#11）执行某地址存在的二进制文件" class="headerlink" title="11）执行某地址存在的二进制文件"></a>11）执行某地址存在的二进制文件</h5><p><code>#go 内存地址</code></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">go 0x40000000</span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># Starting application at 0x40000000 ...</span></span></span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
-        <category>测试</category>
+        <category>linux驱动</category>
       </categories>
-  </entry>
-  <entry>
-    <title>系统编程(一)</title>
-    <url>/posts/7ca2f4f4/</url>
-    <content><![CDATA[<h1 id="【系统编程】进程"><a href="#【系统编程】进程" class="headerlink" title="【系统编程】进程"></a>【系统编程】进程</h1><blockquote>
-<p>资源管理的最小单位</p>
-</blockquote>
-<p>[toc]{level: [2]}</p>
-<p><img src="/posts/7ca2f4f4/1.png" alt="截图"></p>
-<h2 id="进程基本概念"><a href="#进程基本概念" class="headerlink" title="进程基本概念"></a>进程基本概念</h2><ul>
-<li><strong>什么是进程？</strong>：<br>UNIX标准把进程定义为：一个其中运行着一个或者多个线程的地址空间和这些线程所需要的系统资源。我们可以把进程看做正在运行的程序。</li>
-<li><strong>程序和进程</strong>：<br>程序是一堆待执行的代码。  -&gt; 静态的文本数据。  project.c (C程序) /  project (可执行程序)</li>
-<li><strong>高拓展性</strong>：<br>可在文档中嵌入小工具、可运行的代码块、ECharts 图形、Plantuml 图形、Drawio 图形等</li>
-<li><strong>支持加密</strong>：<br>用来保存账号等隐私文件，文件可单独设置密码</li>
-</ul>
-<h2 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h2><ul>
-<li><strong>进程？</strong>：<br>UNIX标准把进程定义为：一个其中运行着一个或者多个线程的地址空间和这些线程所需要的系统资源。我们可以把进程看做正在运行的程序。</li>
-<li><strong>程序进程</strong>：<br>程序是一堆待执行的代码。  -&gt; 静态的文本数据。  project.c (C程序) /  project (可执行程序)</li>
-<li><strong>高拓性</strong>：<br>可在文档中嵌入小工具、可运行的代码块、ECharts 图形、Plantuml 图形、Drawio 图形等</li>
-<li><strong>加密</strong>：<br>用来保存账号等隐私文件，文件可单独设置密码</li>
-</ul>
-<h2 id="程"><a href="#程" class="headerlink" title="程"></a>程</h2><ul>
-<li><strong>进程？</strong>：<br>UNIX标准把进程定义为：一个其中运行着一个或者多个线程的地址空间和这些线程所需要的系统资源。我们可以把进程看做正在运行的程序。</li>
-<li><strong>程序进程</strong>：<br>程序是一堆待执行的代码。  -&gt; 静态的文本数据。  project.c (C程序) /  project (可执行程序)</li>
-<li><strong>高拓性</strong>：<br>可在文档中嵌入小工具、可运行的代码块、ECharts 图形、Plantuml 图形、Drawio 图形等</li>
-<li><strong>加密</strong>：<br>用来保存账号等隐私文件，文件可单独设置密码</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>你好</title>
-    <url>/posts/50a2b841/</url>
-    <content><![CDATA[<p>hello;</p>
-<p><img src="/posts/50a2b841/linusystem.png" alt="aaa"></p>
-]]></content>
       <tags>
-        <tag>你好</tag>
+        <tag>嵌入式</tag>
+        <tag>驱动</tag>
+        <tag>uboot</tag>
       </tags>
   </entry>
 </search>
