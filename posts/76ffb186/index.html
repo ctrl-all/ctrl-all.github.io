@@ -77,6 +77,7 @@
 
 
 
+  <meta name="keywords" content="嵌入式,驱动,uboot,">
 
 
 
@@ -86,18 +87,32 @@
 
 
 
-<meta name="description" content="myblog">
-<meta name="keywords" content="C,C++,linux">
-<meta property="og:type" content="website">
-<meta property="og:title" content="标签">
-<meta property="og:url" content="http://qqcu.github.io/tags/index.html">
+
+<meta name="description" content="一、裸机编程的思路思路：(1)分析原理图(2)理解硬件的控制原理(3)找到对应的寄存器(4)理解寄存器的控制流程(5)根据地址访问寄存器(6)实现硬件的控制 二、分析原理图1.实物图 实物图  2.通过丝印层D7~D10，在原理图gec6818_base_V1.1-底板.pdf找到如下。 原理图  如果控制D7亮，GPIOE13输出低电平；控制D7 灭，GPIOE13 输出高电平。三、寄存器配置找">
+<meta name="keywords" content="嵌入式,驱动,uboot">
+<meta property="og:type" content="article">
+<meta property="og:title" content="嵌入式底层驱动笔记2-ARM编程">
+<meta property="og:url" content="http://qqcu.github.io/posts/76ffb186/index.html">
 <meta property="og:site_name" content="Curran的博客">
-<meta property="og:description" content="myblog">
+<meta property="og:description" content="一、裸机编程的思路思路：(1)分析原理图(2)理解硬件的控制原理(3)找到对应的寄存器(4)理解寄存器的控制流程(5)根据地址访问寄存器(6)实现硬件的控制 二、分析原理图1.实物图 实物图  2.通过丝印层D7~D10，在原理图gec6818_base_V1.1-底板.pdf找到如下。 原理图  如果控制D7亮，GPIOE13输出低电平；控制D7 灭，GPIOE13 输出高电平。三、寄存器配置找">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-29T01:32:26.151Z">
+<meta property="og:image" content="http://qqcu.github.io/posts/76ffb186/0.png">
+<meta property="og:image" content="http://qqcu.github.io/posts/76ffb186/1.png">
+<meta property="og:image" content="http://qqcu.github.io/posts/76ffb186/2.png">
+<meta property="og:image" content="http://qqcu.github.io/posts/76ffb186/3.png">
+<meta property="og:image" content="http://qqcu.github.io/posts/76ffb186/4.png">
+<meta property="og:image" content="http://qqcu.github.io/posts/76ffb186/5.png">
+<meta property="og:image" content="http://qqcu.github.io/posts/76ffb186/6.png">
+<meta property="og:image" content="http://qqcu.github.io/posts/76ffb186/7.png">
+<meta property="og:image" content="http://qqcu.github.io/posts/76ffb186/8.png">
+<meta property="og:image" content="http://qqcu.github.io/posts/76ffb186/9.png">
+<meta property="og:image" content="http://qqcu.github.io/posts/76ffb186/10.png">
+<meta property="og:image" content="http://qqcu.github.io/posts/76ffb186/11.png">
+<meta property="og:updated_time" content="2019-11-06T03:24:15.894Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="标签">
-<meta name="twitter:description" content="myblog">
+<meta name="twitter:title" content="嵌入式底层驱动笔记2-ARM编程">
+<meta name="twitter:description" content="一、裸机编程的思路思路：(1)分析原理图(2)理解硬件的控制原理(3)找到对应的寄存器(4)理解寄存器的控制流程(5)根据地址访问寄存器(6)实现硬件的控制 二、分析原理图1.实物图 实物图  2.通过丝印层D7~D10，在原理图gec6818_base_V1.1-底板.pdf找到如下。 原理图  如果控制D7亮，GPIOE13输出低电平；控制D7 灭，GPIOE13 输出高电平。三、寄存器配置找">
+<meta name="twitter:image" content="http://qqcu.github.io/posts/76ffb186/0.png">
 
 
 
@@ -127,7 +142,7 @@
 
 
 
-  <link rel="canonical" href="http://qqcu.github.io/tags/">
+  <link rel="canonical" href="http://qqcu.github.io/posts/76ffb186/">
 
 
 
@@ -152,7 +167,7 @@
 <!-- fontawesome5 -->
 <link href="/lib/font-awesome/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
 
-  <title>标签 | Curran的博客</title>
+  <title>嵌入式底层驱动笔记2-ARM编程 | Curran的博客</title>
   
 
 
@@ -318,41 +333,300 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://qqcu.github.io/posts/76ffb186/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Curran">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Curran的博客">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h2 class="post-title" itemprop="name headline">标签</h2>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                目前共计 3 个标签
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/uboot/" style="font-size: 12px; color: #ccc">uboot</a> <a href="/tags/嵌入式/" style="font-size: 12px; color: #ccc">嵌入式</a> <a href="/tags/驱动/" style="font-size: 12px; color: #ccc">驱动</a>
-            </div>
-          </div>
+          <h2 class="post-title" itemprop="name headline">嵌入式底层驱动笔记2-ARM编程</h2>
+        
+
+        <div class="post-meta">
 	  
-        
-      </div>
+	  
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar-plus"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-06T10:52:30+08:00">
+                2019-11-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux驱动/" itemprop="url" rel="index">
+                    <span itemprop="name">linux驱动</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="far fa-comment-dots"></i>
+                </span>
+                <a href="/posts/76ffb186/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/posts/76ffb186/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <!--<i class="far fa-file-word"></i>-->
+		  <i class="fas fa-book-open"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文共计 &#58;</span>
+                
+                <span title="本文共计">
+                  1.4k 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="far fa-clock"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅文耗时 &asymp;</span>
+                
+                <span title="阅文耗时">
+                  5 min
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h2 id="一、裸机编程的思路"><a href="#一、裸机编程的思路" class="headerlink" title="一、裸机编程的思路"></a>一、裸机编程的思路</h2><p>思路：<br>(1)分析原理图<br>(2)理解硬件的控制原理<br>(3)找到对应的寄存器<br>(4)理解寄存器的控制流程<br>(5)根据地址访问寄存器<br>(6)实现硬件的控制</p>
+<h2 id="二、分析原理图"><a href="#二、分析原理图" class="headerlink" title="二、分析原理图"></a>二、分析原理图</h2><h3 id="1-实物图"><a href="#1-实物图" class="headerlink" title="1.实物图"></a>1.实物图</h3><p><img src="/posts/76ffb186/0.png" alt="实物图"></p>
+<center>实物图</center>
+
+<h3 id="2-通过丝印层D7-D10，在原理图gec6818-base-V1-1-底板-pdf找到如下。"><a href="#2-通过丝印层D7-D10，在原理图gec6818-base-V1-1-底板-pdf找到如下。" class="headerlink" title="2.通过丝印层D7~D10，在原理图gec6818_base_V1.1-底板.pdf找到如下。"></a>2.通过丝印层D7~D10，在原理图gec6818_base_V1.1-底板.pdf找到如下。</h3><p><img src="/posts/76ffb186/1.png" alt="原理图"></p>
+<center>原理图</center>
+
+<pre><code>如果控制D7亮，GPIOE13输出低电平；控制D7 灭，GPIOE13 输出高电平。</code></pre><h2 id="三、寄存器配置"><a href="#三、寄存器配置" class="headerlink" title="三、寄存器配置"></a>三、寄存器配置</h2><pre><code>找对应的寄存器必须要找到S5P6818芯片数据手册SEC_S5P6818X_Users_Manual_preliminary_Ver_0.00.pdf。</code></pre><p><img src="/posts/76ffb186/2.png" alt="数据手册"></p>
+<h3 id="1、找到GPIO输出模式的配置方法"><a href="#1、找到GPIO输出模式的配置方法" class="headerlink" title="1、找到GPIO输出模式的配置方法"></a>1、找到GPIO输出模式的配置方法</h3><p><img src="/posts/76ffb186/3.png" alt="数据手册"></p>
+<p>1)配置某个端口某个引脚为输出模式<br>GPIOE多功能寄存器，设置对应的为b’00（这里是二进制格式）</p>
+<p>2)使能当前的引脚输出使能<br>GPIOE 输出使能寄存器对应的位设置为1</p>
+<p>3)输出高低电平<br>GPIOE输出寄存器对应的位设置为1/0.</p>
+<h3 id="2、对应的寄存器"><a href="#2、对应的寄存器" class="headerlink" title="2、对应的寄存器"></a>2、对应的寄存器</h3><p><img src="/posts/76ffb186/4.png" alt="数据手册"></p>
+<h3 id="3、多功能选择寄存器"><a href="#3、多功能选择寄存器" class="headerlink" title="3、多功能选择寄存器"></a>3、多功能选择寄存器</h3><p>1)多功能寄存器0</p>
+<p><img src="/posts/76ffb186/5.png" alt="数据手册"><br>    这里是GPIO多功能选择寄存器0，主要配置端口的0~15引脚。</p>
+<p>2)多功能寄存器1<br><img src="/posts/76ffb186/6.png" alt="数据手册"><br>    这里是GPIO多功能选择寄存器1，主要配置端口的16~31引脚。</p>
+<p>3)多功能寄存器的ALT Function0~ALT Funciton2功能描述</p>
+<pre><code>ALT Function0~ALT Funciton2代表功能要查阅前面的章节2.3.1。</code></pre><p><img src="/posts/76ffb186/7.png" alt="数据手册"></p>
+<h3 id="4、输出使能寄存器"><a href="#4、输出使能寄存器" class="headerlink" title="4、输出使能寄存器"></a>4、输出使能寄存器</h3><p><img src="/posts/76ffb186/8.png" alt="数据手册"></p>
+<h3 id="5、输出电平寄存器"><a href="#5、输出电平寄存器" class="headerlink" title="5、输出电平寄存器"></a>5、输出电平寄存器</h3><p><img src="/posts/76ffb186/9.png" alt="数据手册"></p>
+<h2 id="四、-源码"><a href="#四、-源码" class="headerlink" title="四、 源码"></a>四、 源码</h2><pre><code>该源码用于控制D7灯的亮与灭。</code></pre><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.定义寄存器</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> GPIOEOUT 		(*(volatile unsigned int *)0xC001E000)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> GPIOEOUTENB 	(*(volatile unsigned int *)0xC001E004)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> GPIOEOUTALTFN0 	(*(volatile unsigned int *)0xC001E020)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> GPIOEOUTALTFN1 	(*(volatile unsigned int *)0xC001E024)</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">delay</span><span class="params">(<span class="keyword">void</span>)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//2.c程序的入口，同时不使用标准的c库，因此入口函数名字为_start</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> _start(<span class="keyword">void</span>)</span><br><span class="line">&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//配置GPIOE13为输出模式</span></span><br><span class="line">	GPIOEOUTALTFN0&amp;=~(<span class="number">3</span>&lt;&lt;<span class="number">26</span>);	<span class="comment">//GPIOE13的多功能配置[27:26]清零</span></span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//允许GPIOE13输出电平</span></span><br><span class="line">	GPIOEOUTENB|=<span class="number">1</span>&lt;&lt;<span class="number">13</span>;			</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">while</span>(<span class="number">1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//点亮</span></span><br><span class="line">		GPIOEOUT&amp;=~(<span class="number">1</span>&lt;&lt;<span class="number">13</span>);</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//延时一会</span></span><br><span class="line">		delay();</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//熄灭</span></span><br><span class="line">		GPIOEOUT|=<span class="number">1</span>&lt;&lt;<span class="number">13</span>;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//延时一会</span></span><br><span class="line">		delay();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">delay</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="comment">//思考为什么要加volatile</span></span><br><span class="line">	<span class="keyword">volatile</span> <span class="keyword">unsigned</span> <span class="keyword">int</span> i=<span class="number">0x2000000</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">while</span>(i--);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="五、使用交叉编译器进行编译"><a href="#五、使用交叉编译器进行编译" class="headerlink" title="五、使用交叉编译器进行编译"></a>五、使用交叉编译器进行编译</h2><h3 id="1-检查ubuntu是否有交叉编译器。"><a href="#1-检查ubuntu是否有交叉编译器。" class="headerlink" title="1.检查ubuntu是否有交叉编译器。"></a>1.检查ubuntu是否有交叉编译器。</h3><figure class="highlight plain"><figcaption><span>which arm-linux-gcc```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">`/usr/local/arm/5.4.0/usr/bin/arm-linux-gcc`</span><br><span class="line"></span><br><span class="line">### 2.进入共享目录去编译led_demo1裸机程序。</span><br><span class="line"></span><br><span class="line">1）将led.c编译为目标文件led.o，且不使用标准c的库</span><br><span class="line">`arm-linux-gcc -o led.o -c led.c -nostdlib`</span><br><span class="line"></span><br><span class="line">2）将led.o链接到内存地址0x40000000，输出新的执行程序为led.elf</span><br><span class="line">`arm-linux-ld -Ttext 0x40000000 -o led.elf led.o`</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">3）由于uboot不是linux操作系统，它不具有运行应用程序的能力，需要转换为bin文件。</span><br><span class="line">`arm-linux-objcopy -O binary led.elf led.bin`</span><br><span class="line"></span><br><span class="line">## 六、下载led.bin到开发板执行</span><br><span class="line">### 1.使用uboot的tftp进行下载</span><br><span class="line">`tftp 0x40000000 led.bin`</span><br><span class="line"></span><br><span class="line">### 2.执行led.bin</span><br><span class="line">`go 0x40000000`</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">**思考1**</span><br><span class="line">	思考源码的delay函数为什么加上volatile关键字？</span><br><span class="line">	答案：如果使用更加高等级的编译优化，不使用volatile关键字进行修饰，这个时候delay函数会直接返回。</span><br><span class="line">1.编译代码步骤：</span><br><span class="line"></span><br><span class="line">`arm-linux-gcc -o led.o -c led.c -nostdlib -O2`				//添加了二级优化</span><br><span class="line">`arm-linux-ld -Ttext 0x40000000 -o led.elf led.o`</span><br><span class="line">`arm-linux-objcopy -O binary led.elf led.bin`</span><br><span class="line">`arm-linux-objdump -D led.elf &gt; led.dis`						//生成反汇编代码文件</span><br><span class="line"></span><br><span class="line">2.delay函数添加了volatile关键字</span><br><span class="line">```c</span><br><span class="line">void delay(void)</span><br><span class="line">&#123;</span><br><span class="line">	//思考为什么要加volatile</span><br><span class="line">	volatile unsigned int i=0x2000000;</span><br><span class="line">	while(i--);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>使用了volatile关键字之后，告诉编译器谨慎去对待i变量，里面有对i变量操作的代码，都帮我去生成对应的机器代码。<br>以下反汇编可以看到delay函数有对i变量进行减法运算操作：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">40000000 &lt;delay&gt;:</span><br><span class="line">40000000:	e24dd008 	sub	sp, sp, #8</span><br><span class="line">40000004:	e3a03402 	mov	r3, #33554432	; 0x2000000</span><br><span class="line">40000008:	e58d3004 	str	r3, [sp, #4]</span><br><span class="line">4000000c:	e59d3004 	ldr	r3, [sp, #4]</span><br><span class="line">40000010:	e3530000 	cmp	r3, #0</span><br><span class="line">40000014:	e2433001 	sub	r3, r3, #1</span><br><span class="line">40000018:	e58d3004 	str	r3, [sp, #4]</span><br><span class="line">4000001c:	1afffffa 	bne	4000000c &lt;delay+0xc&gt;</span><br><span class="line">40000020:	e28dd008 	add	sp, sp, #8</span><br><span class="line">40000024:	e12fff1e 	bx	lr							//函数返回</span><br></pre></td></tr></table></figure>
+
+<p>3.delay函数无添加volatile关键字</p>
+<p>void delay(void)<br>{</p>
+<pre><code>unsigned int i=0x2000000;
+while(i--);</code></pre><p>}</p>
+<pre><code>以下反汇编代码可以看到delay函数变为空函数，优化掉对i变量的操作，直接函数返回，原因在于编译器觉得i变量没有起到作用（编译器是这么想的，只是i变量自己做减法操作，但是没有给其他变量与其他函数使用，无用功般的占用CPU资源），对代码影响不大，直接对它进行删除。</code></pre><p>40000000 <delay>:<br>40000024:    e12fff1e     bx    lr                        //函数返回</delay></p>
+<p><strong>思考2</strong><br>    思考对寄存器某些位进行清零，为什么使用位与、取反的操作。</p>
+<pre><code>//对GPIOEOUT13寄存器的第13位进行清零
+//假如GPIOEOUT寄存器的初值为0xFFFFFFFF。
+GPIOEOUT&amp;=~(1&lt;&lt;13);</code></pre><p>1.1&lt;&lt;13的值为如下：<br><img src="/posts/76ffb186/10.png" alt="示意图"></p>
+<p>2.~(1&lt;&lt;13)的值为如下：<br><img src="/posts/76ffb186/11.png" alt="示意图"></p>
+<pre><code>通过上图可以知道，只要GPIOEOUT寄存器跟~(1&lt;&lt;13)进行相与（跟1与，结果不变；跟0与，结果为0），从而知道只有第13bit位变为0，其他bit位保持不变。</code></pre><p>总结：<br>1)将变量a的第30位置1，其他位保持不变。<br>    a|=1&lt;&lt;30;</p>
+<p>2)将变量a的第24、30位置1，其他位保持不变。<br>    a|=(1&lt;&lt;30)|(1&lt;&lt;24);</p>
+<p>3)将变量a的第30位取反，其他位保持不变。<br>    a^=(1&lt;&lt;30);</p>
+<p>4)将变量a的第30位清零，其他位保持不变。<br>    a&amp;=~(1&lt;&lt;30);</p>
+
       
     </div>
+
+    <!-- 相关文章推荐 -->
+     
+          
+
+  <div class="popular-posts-header">
+    <i class="fa fa-graduation-cap"></i>
+    相关文章
+  </div>
+
+ <details>
+   <summary>点击查看</summary>
+     <ul class="popular-posts">
+     
+       <li class="popular-posts-item">
+         
+         
+         <div class="popular-posts-title"><a href="/posts/58333f6c/" rel="bookmark">[嵌入式底层驱动笔记]uboot_1</a></div>
+         
+       </li>
+     
+     </ul>
+ </details>
+
+
+
+     
+
     
     
     
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/嵌入式/" rel="tag"><i class="fas fa-tag"></i> 嵌入式</a>
+          
+            <a href="/tags/驱动/" rel="tag"><i class="fas fa-tag"></i> 驱动</a>
+          
+            <a href="/tags/uboot/" rel="tag"><i class="fas fa-tag"></i> uboot</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div>
+	  <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Curran
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://qqcu.github.io/posts/76ffb186/" title="嵌入式底层驱动笔记2-ARM编程">http://qqcu.github.io/posts/76ffb186/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处！
+  </li>
+</ul>
+
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/posts/58333f6c/" rel="next" title="[嵌入式底层驱动笔记]uboot_1">
+                <i class="fas fa-chevron-left"></i> [嵌入式底层驱动笔记]uboot_1
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -361,6 +635,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -381,8 +662,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -777,6 +1067,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、裸机编程的思路"><span class="nav-number">1.</span> <span class="nav-text">一、裸机编程的思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、分析原理图"><span class="nav-number">2.</span> <span class="nav-text">二、分析原理图</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-实物图"><span class="nav-number">2.1.</span> <span class="nav-text">1.实物图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-通过丝印层D7-D10，在原理图gec6818-base-V1-1-底板-pdf找到如下。"><span class="nav-number">2.2.</span> <span class="nav-text">2.通过丝印层D7~D10，在原理图gec6818_base_V1.1-底板.pdf找到如下。</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、寄存器配置"><span class="nav-number">3.</span> <span class="nav-text">三、寄存器配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、找到GPIO输出模式的配置方法"><span class="nav-number">3.1.</span> <span class="nav-text">1、找到GPIO输出模式的配置方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、对应的寄存器"><span class="nav-number">3.2.</span> <span class="nav-text">2、对应的寄存器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、多功能选择寄存器"><span class="nav-number">3.3.</span> <span class="nav-text">3、多功能选择寄存器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、输出使能寄存器"><span class="nav-number">3.4.</span> <span class="nav-text">4、输出使能寄存器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5、输出电平寄存器"><span class="nav-number">3.5.</span> <span class="nav-text">5、输出电平寄存器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、-源码"><span class="nav-number">4.</span> <span class="nav-text">四、 源码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五、使用交叉编译器进行编译"><span class="nav-number">5.</span> <span class="nav-text">五、使用交叉编译器进行编译</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-检查ubuntu是否有交叉编译器。"><span class="nav-number">5.1.</span> <span class="nav-text">1.检查ubuntu是否有交叉编译器。</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
