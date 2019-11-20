@@ -55,7 +55,7 @@ GPIOEOUT&amp;=~(1&lt;&lt;13);</code></pre><p>1.1&lt;&lt;13的值为如下：<br>
       </tags>
   </entry>
   <entry>
-    <title>[嵌入式底层驱动笔记]uboot_1</title>
+    <title>嵌入式底层驱动笔记1-uboot</title>
     <url>/posts/58333f6c/</url>
     <content><![CDATA[<h1 id="uboot操作"><a href="#uboot操作" class="headerlink" title="uboot操作"></a>uboot操作</h1><blockquote>
 <p>探寻嵌入式系统移植的世界</p>
