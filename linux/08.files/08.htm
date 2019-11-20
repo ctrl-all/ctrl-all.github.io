@@ -1,351 +1,351 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <!-- saved from url=(0063)http://man.chinaunix.net/develop/c&c++/linux_c/function/08.html -->
 <HTML><HEAD><TITLE>Untitled Document</TITLE>
-<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
 <META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
-  <BODY><A target = "_top" href="../../">&lt;&lt; ·µ»Ø²©¿ÍÊ×Ò³ 
+  <BODY><A target = "_top" href="../../">&lt;&lt; è¿”å›åšå®¢é¦–é¡µ 
 </A><BR><BR>
 <TABLE width="100%">
   <TBODY>
   <TR>
-    <TD vAlign=top width=80>¡¡ 
-      <DIV align=right><BR><FONT face=ËÎÌå size=2><A 
+    <TD vAlign=top width=80>ã€€ 
+      <DIV align=right><BR><FONT face=å®‹ä½“ size=2><A 
       name=linuxc125></A></FONT></DIV></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2><BR></FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2><BR>crypt£¨½«ÃÜÂë»òÊı¾İ±àÂë£© </FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2><BR></FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2><BR>cryptï¼ˆå°†å¯†ç æˆ–æ•°æ®ç¼–ç ï¼‰ </FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>Ïà¹Øº¯Êı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>getpass<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>ç›¸å…³å‡½æ•° </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>getpass<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>±íÍ·ÎÄ¼ş </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>#define 
+      <DIV align=right><FONT face=å®‹ä½“ size=2>è¡¨å¤´æ–‡ä»¶ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>#define 
       _XOPEN_SOURCE<BR>#include&lt;unistd.h&gt;<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>¶¨Òåº¯Êı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>char * crypt (const char *key,const char * 
+      <DIV align=right><FONT face=å®‹ä½“ size=2>å®šä¹‰å‡½æ•° </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>char * crypt (const char *key,const char * 
       salt);<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>º¯ÊıËµÃ÷ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>crypt()½«Ê¹ÓÃData Encryption 
-      Standard(DES)ÑİËã·¨½«²ÎÊıkeyËùÖ¸µÄ×Ö·û´®¼ÓÒÔ±àÂë£¬key×Ö·û´®³¤¶È½öÈ¡Ç°8¸ö×Ö·û£¬³¬¹ı´Ë³¤¶ÈµÄ×Ö·ûÃ»ÓĞÒâÒå¡£²ÎÊısaltÎªÁ½¸ö×Ö·û×é³ÉµÄ×Ö·û´®£¬ÓÉa-z¡¢A-Z¡¢0-9£¬¡°.¡±ºÍ¡°/¡±Ëù×é³É£¬ÓÃÀ´¾ö¶¨Ê¹ÓÃ4096 
-      ÖÖ²»Í¬ÄÚ½¨±í¸ñµÄÄÄÒ»¸ö¡£º¯ÊıÖ´ĞĞ³É¹¦ºó»á·µ»ØÖ¸Ïò±àÂë¹ıµÄ×Ö·û´®Ö¸Õë£¬²ÎÊıkey ËùÖ¸µÄ×Ö·û´®²»»áÓĞËù¸ü¶¯¡£±àÂë¹ıµÄ×Ö·û´®³¤¶ÈÎª13 
-      ¸ö×Ö·û£¬Ç°Á½¸ö×Ö·ûÎª²ÎÊısalt´ú±íµÄ×Ö·û´®¡£<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>å‡½æ•°è¯´æ˜ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>crypt()å°†ä½¿ç”¨Data Encryption 
+      Standard(DES)æ¼”ç®—æ³•å°†å‚æ•°keyæ‰€æŒ‡çš„å­—ç¬¦ä¸²åŠ ä»¥ç¼–ç ï¼Œkeyå­—ç¬¦ä¸²é•¿åº¦ä»…å–å‰8ä¸ªå­—ç¬¦ï¼Œè¶…è¿‡æ­¤é•¿åº¦çš„å­—ç¬¦æ²¡æœ‰æ„ä¹‰ã€‚å‚æ•°saltä¸ºä¸¤ä¸ªå­—ç¬¦ç»„æˆçš„å­—ç¬¦ä¸²ï¼Œç”±a-zã€A-Zã€0-9ï¼Œâ€œ.â€å’Œâ€œ/â€æ‰€ç»„æˆï¼Œç”¨æ¥å†³å®šä½¿ç”¨4096 
+      ç§ä¸åŒå†…å»ºè¡¨æ ¼çš„å“ªä¸€ä¸ªã€‚å‡½æ•°æ‰§è¡ŒæˆåŠŸåä¼šè¿”å›æŒ‡å‘ç¼–ç è¿‡çš„å­—ç¬¦ä¸²æŒ‡é’ˆï¼Œå‚æ•°key æ‰€æŒ‡çš„å­—ç¬¦ä¸²ä¸ä¼šæœ‰æ‰€æ›´åŠ¨ã€‚ç¼–ç è¿‡çš„å­—ç¬¦ä¸²é•¿åº¦ä¸º13 
+      ä¸ªå­—ç¬¦ï¼Œå‰ä¸¤ä¸ªå­—ç¬¦ä¸ºå‚æ•°saltä»£è¡¨çš„å­—ç¬¦ä¸²ã€‚<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>·µ»ØÖµ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>·µ»ØÒ»¸öÖ¸ÏòÒÔNULL½áÎ²µÄÃÜÂë×Ö·û´®¡£<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>è¿”å›å€¼ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>è¿”å›ä¸€ä¸ªæŒ‡å‘ä»¥NULLç»“å°¾çš„å¯†ç å­—ç¬¦ä¸²ã€‚<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>¸½¼ÓËµÃ÷ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>Ê¹ÓÃGCC±àÒëÊ±Ğè¼Ó-lcrypt¡£<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>é™„åŠ è¯´æ˜ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>ä½¿ç”¨GCCç¼–è¯‘æ—¶éœ€åŠ -lcryptã€‚<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>·¶Àı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>#include&lt;unistd.h&gt;<BR>main()<BR>{<BR>char 
-      passwd[13];<BR>char *key;<BR>char slat[2];<BR>key= getpass(¡°Input First 
-      Password:¡±);<BR>slat[0]=key[0];<BR>slat[1]=key[1];<BR>strcpy(passwd,crypt(key 
-      slat));<BR>key=getpass(¡°Input Second 
-      Password:¡±);<BR>slat[0]=passwd[0];<BR>slat[1]=passwd[1];<BR>printf(¡°After 
-      crypt(),1st passwd :%s\n¡±,passwd);<BR>printf(¡°After crypt(),2nd passwd:%s 
-      \n¡±,crypt(key slat));<BR>}<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>èŒƒä¾‹ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>#include&lt;unistd.h&gt;<BR>main()<BR>{<BR>char 
+      passwd[13];<BR>char *key;<BR>char slat[2];<BR>key= getpass(â€œInput First 
+      Password:â€);<BR>slat[0]=key[0];<BR>slat[1]=key[1];<BR>strcpy(passwd,crypt(key 
+      slat));<BR>key=getpass(â€œInput Second 
+      Password:â€);<BR>slat[0]=passwd[0];<BR>slat[1]=passwd[1];<BR>printf(â€œAfter 
+      crypt(),1st passwd :%s\nâ€,passwd);<BR>printf(â€œAfter crypt(),2nd passwd:%s 
+      \nâ€,crypt(key slat));<BR>}<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>Ö´ĞĞ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>Input First Password: /* ÊäÈëtest£¬±àÂëºó´æÓÚpasswd[ ] 
-      */<BR>Input Second Password /*ÊäÈëtest£¬ÃÜÂëÏàÍ¬±àÂëºóÒ²»áÏàÍ¬*/<BR>After crypt () 1st 
+      <DIV align=right><FONT face=å®‹ä½“ size=2>æ‰§è¡Œ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>Input First Password: /* è¾“å…¥testï¼Œç¼–ç åå­˜äºpasswd[ ] 
+      */<BR>Input Second Password /*è¾“å…¥testï¼Œå¯†ç ç›¸åŒç¼–ç åä¹Ÿä¼šç›¸åŒ*/<BR>After crypt () 1st 
       Passwd : teH0wLIpW0gyQ<BR>After crypt () 2nd Passwd : 
       teH0wLIpW0gyQ<BR></FONT></TD></TR>
   <TR>
-    <TD vAlign=top width=80>¡¡ 
-      <DIV align=right><BR><FONT face=ËÎÌå size=2><A 
+    <TD vAlign=top width=80>ã€€ 
+      <DIV align=right><BR><FONT face=å®‹ä½“ size=2><A 
       name=linuxc126></A></FONT></DIV></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2><BR></FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2><BR>bsearch£¨¶şÔªËÑË÷£© </FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2><BR></FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2><BR>bsearchï¼ˆäºŒå…ƒæœç´¢ï¼‰ </FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>Ïà¹Øº¯Êı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>qsort<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>ç›¸å…³å‡½æ•° </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>qsort<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>±íÍ·ÎÄ¼ş </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>#include&lt;stdlib.h&gt;<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>è¡¨å¤´æ–‡ä»¶ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>#include&lt;stdlib.h&gt;<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>¶¨Òåº¯Êı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>void *bsearch(const void *key,const void 
+      <DIV align=right><FONT face=å®‹ä½“ size=2>å®šä¹‰å‡½æ•° </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>void *bsearch(const void *key,const void 
       *base,size_t nmemb,size_tsize,int (*compar) (const void*,const 
       void*));<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>º¯ÊıËµÃ÷ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå 
-      size=2>bsearch()ÀûÓÃ¶şÔªËÑË÷´ÓÅÅĞòºÃµÄÊı×éÖĞ²éÕÒÊı¾İ¡£²ÎÊıkeyÖ¸ÏòÓû²éÕÒµÄ¹Ø¼üÊı¾İ£¬²ÎÊıbaseÖ¸ÏòÒª±»ËÑË÷µÄÊı×é¿ªÍ·µØÖ·£¬²ÎÊınmemb 
-      ´ú±íÊı×éÖĞµÄÔªËØÊıÁ¿£¬Ã¿Ò»ÔªËØµÄ´óĞ¡ÔòÓÉ²ÎÊısize¾ö¶¨£¬×îºóÒ»Ïî²ÎÊıcompar 
-      ÎªÒ»º¯ÊıÖ¸Õë£¬Õâ¸öº¯ÊıÓÃÀ´ÅĞ¶ÏÁ½¸öÔªËØÖ®¼äµÄ´óĞ¡¹ØÏµ£¬Èô´«¸øcompar µÄµÚÒ»¸ö²ÎÊıËùÖ¸µÄÔªËØÊı¾İ´óÓÚµÚ¶ş¸ö²ÎÊıËùÖ¸µÄÔªËØÊı¾İÔò±ØĞë»Ø´«´óÓÚ0 
-      µÄÖµ£¬Á½¸öÔªËØÊı¾İÏàµÈÔò»Ø´«0¡£<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>å‡½æ•°è¯´æ˜ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ 
+      size=2>bsearch()åˆ©ç”¨äºŒå…ƒæœç´¢ä»æ’åºå¥½çš„æ•°ç»„ä¸­æŸ¥æ‰¾æ•°æ®ã€‚å‚æ•°keyæŒ‡å‘æ¬²æŸ¥æ‰¾çš„å…³é”®æ•°æ®ï¼Œå‚æ•°baseæŒ‡å‘è¦è¢«æœç´¢çš„æ•°ç»„å¼€å¤´åœ°å€ï¼Œå‚æ•°nmemb 
+      ä»£è¡¨æ•°ç»„ä¸­çš„å…ƒç´ æ•°é‡ï¼Œæ¯ä¸€å…ƒç´ çš„å¤§å°åˆ™ç”±å‚æ•°sizeå†³å®šï¼Œæœ€åä¸€é¡¹å‚æ•°compar 
+      ä¸ºä¸€å‡½æ•°æŒ‡é’ˆï¼Œè¿™ä¸ªå‡½æ•°ç”¨æ¥åˆ¤æ–­ä¸¤ä¸ªå…ƒç´ ä¹‹é—´çš„å¤§å°å…³ç³»ï¼Œè‹¥ä¼ ç»™compar çš„ç¬¬ä¸€ä¸ªå‚æ•°æ‰€æŒ‡çš„å…ƒç´ æ•°æ®å¤§äºç¬¬äºŒä¸ªå‚æ•°æ‰€æŒ‡çš„å…ƒç´ æ•°æ®åˆ™å¿…é¡»å›ä¼ å¤§äº0 
+      çš„å€¼ï¼Œä¸¤ä¸ªå…ƒç´ æ•°æ®ç›¸ç­‰åˆ™å›ä¼ 0ã€‚<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>¸½¼ÓËµÃ÷ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå 
-  size=2>ÕÒµ½¹Ø¼üÊı¾İÔò·µ»ØÕÒµ½µÄµØÖ·£¬Èç¹ûÔÚÊı×éÖĞÕÒ²»µ½¹Ø¼üÊı¾İÔò·µ»ØNULL¡£<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>é™„åŠ è¯´æ˜ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ 
+  size=2>æ‰¾åˆ°å…³é”®æ•°æ®åˆ™è¿”å›æ‰¾åˆ°çš„åœ°å€ï¼Œå¦‚æœåœ¨æ•°ç»„ä¸­æ‰¾ä¸åˆ°å…³é”®æ•°æ®åˆ™è¿”å›NULLã€‚<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>·¶Àı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå 
+      <DIV align=right><FONT face=å®‹ä½“ size=2>èŒƒä¾‹ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ 
       size=2>#include&lt;stdio.h&gt;<BR>#include&lt;stdlib.h&gt;<BR>#define 
       NMEMB 5<BR>#define SIZE 10<BR>int compar(const void *a,const void 
       *b)<BR>{<BR>return (strcmp((char *)a,(char 
       *)b));<BR>}<BR>main()<BR>{<BR>char 
-      data[50][size]={¡°linux¡±,¡±freebsd¡±,¡±solaris¡±,¡±sunos¡±,¡±windows¡±};<BR>char 
+      data[50][size]={â€œlinuxâ€,â€freebsdâ€,â€solarisâ€,â€sunosâ€,â€windowsâ€};<BR>char 
       key[80],*base ,*offset;<BR>int i, 
-      nmemb=NMEMB,size=SIZE;<BR>while(1){<BR>printf(¡°&gt;¡±);<BR>fgets(key,sizeof(key),stdin);<BR>key[strlen(key)-1]=¡¯\0¡¯;<BR>if(!strcmp(key,¡±exit¡±))break;<BR>if(!strcmp(key,¡±list¡±)){<BR>for(i=0;i&lt;nmemb;i++)<BR>printf(¡°%s\n¡±,data[i]);<BR>continue;<BR>}<BR>base 
+      nmemb=NMEMB,size=SIZE;<BR>while(1){<BR>printf(â€œ&gt;â€);<BR>fgets(key,sizeof(key),stdin);<BR>key[strlen(key)-1]=â€™\0â€™;<BR>if(!strcmp(key,â€exitâ€))break;<BR>if(!strcmp(key,â€listâ€)){<BR>for(i=0;i&lt;nmemb;i++)<BR>printf(â€œ%s\nâ€,data[i]);<BR>continue;<BR>}<BR>base 
       = data[0];<BR>qsort(base,nmemb,size,compar);<BR>offset = (char *) 
-      bsearch(key,base,nmemb,size,compar);<BR>if( offset = =NULL){<BR>printf(¡°%s 
-      not found!\n¡±,key);<BR>strcpy(data[nmemb++],key);<BR>printf(¡°Add %s to 
-      data array\n¡±,key);<BR>}else{<BR>printf(¡°found: %s 
-      \n¡±,offset);<BR>}<BR>}<BR>}<BR></FONT></TD></TR>
+      bsearch(key,base,nmemb,size,compar);<BR>if( offset = =NULL){<BR>printf(â€œ%s 
+      not found!\nâ€,key);<BR>strcpy(data[nmemb++],key);<BR>printf(â€œAdd %s to 
+      data array\nâ€,key);<BR>}else{<BR>printf(â€œfound: %s 
+      \nâ€,offset);<BR>}<BR>}<BR>}<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>Ö´ĞĞ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>&gt;hello /*ÊäÈëhello×Ö·û´®*/<BR>hello not found! 
-      /*ÕÒ²»µ½hello ×Ö·û´®*/<BR>add hello to data array /*½«hello×Ö·û´®¼ÓÈë*/<BR>&gt;.list 
-      /*ÁĞ³öËùÓĞÊı¾İ*/<BR>freebsd<BR>linux<BR>solaris<BR>sunos<BR>windows<BR>hello<BR>&gt;hello<BR>found: 
+      <DIV align=right><FONT face=å®‹ä½“ size=2>æ‰§è¡Œ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>&gt;hello /*è¾“å…¥helloå­—ç¬¦ä¸²*/<BR>hello not found! 
+      /*æ‰¾ä¸åˆ°hello å­—ç¬¦ä¸²*/<BR>add hello to data array /*å°†helloå­—ç¬¦ä¸²åŠ å…¥*/<BR>&gt;.list 
+      /*åˆ—å‡ºæ‰€æœ‰æ•°æ®*/<BR>freebsd<BR>linux<BR>solaris<BR>sunos<BR>windows<BR>hello<BR>&gt;hello<BR>found: 
       hello<BR></FONT></TD></TR>
   <TR>
-    <TD vAlign=top width=80>¡¡ 
-      <DIV align=right><BR><FONT face=ËÎÌå size=2><A 
+    <TD vAlign=top width=80>ã€€ 
+      <DIV align=right><BR><FONT face=å®‹ä½“ size=2><A 
       name=linuxc127></A></FONT></DIV></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2><BR></FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2><BR>lfind£¨ÏßĞÔËÑË÷£© </FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2><BR></FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2><BR>lfindï¼ˆçº¿æ€§æœç´¢ï¼‰ </FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>Ïà¹Øº¯Êı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>lsearch<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>ç›¸å…³å‡½æ•° </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>lsearch<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>±íÍ·ÎÄ¼ş </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>#include&lt;stdlib.h&gt;<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>è¡¨å¤´æ–‡ä»¶ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>#include&lt;stdlib.h&gt;<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>¶¨Òåº¯Êı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>void *lfind (const void *key,const void 
+      <DIV align=right><FONT face=å®‹ä½“ size=2>å®šä¹‰å‡½æ•° </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>void *lfind (const void *key,const void 
       *base,size_t *nmemb,size_t<BR>size,int(* compar) (const void * ,const void 
       *));<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>º¯ÊıËµÃ÷ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå 
-      size=2>lfind()ÀûÓÃÏßĞÔËÑË÷ÔÚÊı×éÖĞ´ÓÍ·ÖÁÎ²Ò»ÏîÏî²éÕÒÊı¾İ¡£²ÎÊıkeyÖ¸ÏòÓû²éÕÒµÄ¹Ø¼üÊı¾İ£¬²ÎÊıbaseÖ¸ÏòÒª±»ËÑË÷µÄÊı×é¿ªÍ·µØÖ·£¬²ÎÊınmemb´ú±íÊı×éÖĞµÄÔªËØÊıÁ¿£¬Ã¿Ò»ÔªËØµÄ´óĞ¡ÔòÓÉ²ÎÊısize¾ö¶¨£¬×îºóÒ»Ïî²ÎÊıcomparÎªÒ»º¯ÊıÖ¸Õë£¬Õâ¸öº¯ÊıÓÃÀ´ÅĞ¶ÏÁ½¸öÔªËØÊÇ·ñÏàÍ¬£¬Èô´«¸øcompar 
-      µÄÒìµØ¸ö²ÎÊıËùÖ¸µÄÔªËØÊı¾İºÍµÚ¶ş¸ö²ÎÊıËùÖ¸µÄÔªËØÊı¾İÏàÍ¬Ê±Ôò·µ»Ø0£¬Á½¸öÔªËØÊı¾İ²»ÏàÍ¬Ôò·µ»Ø·Ç0Öµ¡£Lfind()Óëlsearch()²»Í¬µãÔÚÓÚ£¬µ±ÕÒ²»µ½¹Ø¼üÊı¾İÊ±lfind()½ö»á·µ»ØNULL£¬¶ø²»»áÖ÷¶¯°Ñ¸Ã±ÊÊı¾İ¼ÓÈëÊı×éÎ²¶Ë¡£<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>å‡½æ•°è¯´æ˜ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ 
+      size=2>lfind()åˆ©ç”¨çº¿æ€§æœç´¢åœ¨æ•°ç»„ä¸­ä»å¤´è‡³å°¾ä¸€é¡¹é¡¹æŸ¥æ‰¾æ•°æ®ã€‚å‚æ•°keyæŒ‡å‘æ¬²æŸ¥æ‰¾çš„å…³é”®æ•°æ®ï¼Œå‚æ•°baseæŒ‡å‘è¦è¢«æœç´¢çš„æ•°ç»„å¼€å¤´åœ°å€ï¼Œå‚æ•°nmembä»£è¡¨æ•°ç»„ä¸­çš„å…ƒç´ æ•°é‡ï¼Œæ¯ä¸€å…ƒç´ çš„å¤§å°åˆ™ç”±å‚æ•°sizeå†³å®šï¼Œæœ€åä¸€é¡¹å‚æ•°comparä¸ºä¸€å‡½æ•°æŒ‡é’ˆï¼Œè¿™ä¸ªå‡½æ•°ç”¨æ¥åˆ¤æ–­ä¸¤ä¸ªå…ƒç´ æ˜¯å¦ç›¸åŒï¼Œè‹¥ä¼ ç»™compar 
+      çš„å¼‚åœ°ä¸ªå‚æ•°æ‰€æŒ‡çš„å…ƒç´ æ•°æ®å’Œç¬¬äºŒä¸ªå‚æ•°æ‰€æŒ‡çš„å…ƒç´ æ•°æ®ç›¸åŒæ—¶åˆ™è¿”å›0ï¼Œä¸¤ä¸ªå…ƒç´ æ•°æ®ä¸ç›¸åŒåˆ™è¿”å›é0å€¼ã€‚Lfind()ä¸lsearch()ä¸åŒç‚¹åœ¨äºï¼Œå½“æ‰¾ä¸åˆ°å…³é”®æ•°æ®æ—¶lfind()ä»…ä¼šè¿”å›NULLï¼Œè€Œä¸ä¼šä¸»åŠ¨æŠŠè¯¥ç¬”æ•°æ®åŠ å…¥æ•°ç»„å°¾ç«¯ã€‚<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>·µ»ØÖµ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå 
-      size=2>ÕÒµ½¹Ø¼üÊı¾İÔò·µ»ØÕÒµ½µÄ¸Ã±ÊÔªËØµÄµØÖ·£¬Èç¹ûÔÚÊı×éÖĞÕÒ²»µ½¹Ø¼üÊı¾İÔò·µ»Ø¿ÕÖ¸Õë(NULL)¡£<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>è¿”å›å€¼ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ 
+      size=2>æ‰¾åˆ°å…³é”®æ•°æ®åˆ™è¿”å›æ‰¾åˆ°çš„è¯¥ç¬”å…ƒç´ çš„åœ°å€ï¼Œå¦‚æœåœ¨æ•°ç»„ä¸­æ‰¾ä¸åˆ°å…³é”®æ•°æ®åˆ™è¿”å›ç©ºæŒ‡é’ˆ(NULL)ã€‚<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>·¶Àı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>²Î¿¼lsearch()¡£<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>èŒƒä¾‹ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>å‚è€ƒlsearch()ã€‚<BR></FONT></TD></TR>
   <TR>
-    <TD vAlign=top width=80>¡¡ 
-      <DIV align=right><BR><FONT face=ËÎÌå size=2><A 
+    <TD vAlign=top width=80>ã€€ 
+      <DIV align=right><BR><FONT face=å®‹ä½“ size=2><A 
       name=linuxc128></A></FONT></DIV></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2><BR></FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2><BR>lsearch£¨ÏßĞÔËÑË÷£© </FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2><BR></FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2><BR>lsearchï¼ˆçº¿æ€§æœç´¢ï¼‰ </FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>Ïà¹Øº¯Êı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>lfind<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>ç›¸å…³å‡½æ•° </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>lfind<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>±íÍ·ÎÄ¼ş </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>#include&lt;stdlib.h&gt;<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>è¡¨å¤´æ–‡ä»¶ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>#include&lt;stdlib.h&gt;<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>¶¨Òåº¯Êı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>void *lsearch(const void * key ,const void * base 
+      <DIV align=right><FONT face=å®‹ä½“ size=2>å®šä¹‰å‡½æ•° </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>void *lsearch(const void * key ,const void * base 
       ,size_t * nmemb,size_t size, int ( * compar) (const void * ,const void 
       *));<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>º¯ÊıËµÃ÷ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå 
-      size=2>lsearch()ÀûÓÃÏßĞÔËÑË÷ÔÚÊı×éÖĞ´ÓÍ·ÖÁÎ²Ò»ÏîÏî²éÕÒÊı¾İ¡£²ÎÊıkeyÖ¸ÏòÓû²éÕÒµÄ¹Ø¼üÊı¾İ£¬²ÎÊıbaseÖ¸ÏòÒª±»ËÑË÷µÄÊı×é¿ªÍ·µØÖ·£¬²ÎÊınmemb 
-      ´ú±íÊı×éÖĞµÄÔªËØÊıÁ¿£¬Ã¿Ò»ÔªËØµÄ´óĞ¡ÔòÓÉ²ÎÊısize ¾ö¶¨£¬×îºóÒ»Ïî²ÎÊıcompar 
-      ÎªÒ»º¯ÊıÖ¸Õë£¬Õâ¸öº¯ÊıÓÃÀ´ÅĞ¶ÏÁ½¸öÔªËØÊÇ·ñÏàÍ¬£¬Èô´«¸øcompar 
-      µÄµÚÒ»¸ö²ÎÊıËùÖ¸µÄÔªËØÊı¾İºÍµÚ¶ş¸ö²ÎÊıËùÖ¸µÄÔªËØÊı¾İÏàÍ¬Ê±Ôò·µ»Ø0£¬Á½¸öÔªËØÊı¾İ²»ÏàÍ¬Ôò·µ»Ø·Ç0 
-      Öµ¡£Èç¹ûlsearch£¨£©ÕÒ²»µ½¹Ø¼üÊı¾İÊ±»áÖ÷¶¯°Ñ¸ÃÏîÊı¾İ¼ÓÈëÊı×éÀï¡£<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>å‡½æ•°è¯´æ˜ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ 
+      size=2>lsearch()åˆ©ç”¨çº¿æ€§æœç´¢åœ¨æ•°ç»„ä¸­ä»å¤´è‡³å°¾ä¸€é¡¹é¡¹æŸ¥æ‰¾æ•°æ®ã€‚å‚æ•°keyæŒ‡å‘æ¬²æŸ¥æ‰¾çš„å…³é”®æ•°æ®ï¼Œå‚æ•°baseæŒ‡å‘è¦è¢«æœç´¢çš„æ•°ç»„å¼€å¤´åœ°å€ï¼Œå‚æ•°nmemb 
+      ä»£è¡¨æ•°ç»„ä¸­çš„å…ƒç´ æ•°é‡ï¼Œæ¯ä¸€å…ƒç´ çš„å¤§å°åˆ™ç”±å‚æ•°size å†³å®šï¼Œæœ€åä¸€é¡¹å‚æ•°compar 
+      ä¸ºä¸€å‡½æ•°æŒ‡é’ˆï¼Œè¿™ä¸ªå‡½æ•°ç”¨æ¥åˆ¤æ–­ä¸¤ä¸ªå…ƒç´ æ˜¯å¦ç›¸åŒï¼Œè‹¥ä¼ ç»™compar 
+      çš„ç¬¬ä¸€ä¸ªå‚æ•°æ‰€æŒ‡çš„å…ƒç´ æ•°æ®å’Œç¬¬äºŒä¸ªå‚æ•°æ‰€æŒ‡çš„å…ƒç´ æ•°æ®ç›¸åŒæ—¶åˆ™è¿”å›0ï¼Œä¸¤ä¸ªå…ƒç´ æ•°æ®ä¸ç›¸åŒåˆ™è¿”å›é0 
+      å€¼ã€‚å¦‚æœlsearchï¼ˆï¼‰æ‰¾ä¸åˆ°å…³é”®æ•°æ®æ—¶ä¼šä¸»åŠ¨æŠŠè¯¥é¡¹æ•°æ®åŠ å…¥æ•°ç»„é‡Œã€‚<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>·µ»ØÖµ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå 
-      size=2>ÕÒµ½¹Ø¼üÊı¾İÔò·µ»ØÕÒµ½µÄ¸Ã±ÊÔªËØµÄËÄÖ«£¬Èç¹ûÔÚÊı×éÖĞÕÒ²»µ½¹Ø¼üÊı¾İÔò½«´Ë¹Ø¼üÊı¾İ¼ÓÈëÊı×é£¬ÔÙ°Ñ¼ÓÈëÊı×éºóµÄµØÖ··µ»Ø¡£<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>è¿”å›å€¼ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ 
+      size=2>æ‰¾åˆ°å…³é”®æ•°æ®åˆ™è¿”å›æ‰¾åˆ°çš„è¯¥ç¬”å…ƒç´ çš„å››è‚¢ï¼Œå¦‚æœåœ¨æ•°ç»„ä¸­æ‰¾ä¸åˆ°å…³é”®æ•°æ®åˆ™å°†æ­¤å…³é”®æ•°æ®åŠ å…¥æ•°ç»„ï¼Œå†æŠŠåŠ å…¥æ•°ç»„åçš„åœ°å€è¿”å›ã€‚<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>·¶Àı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå 
+      <DIV align=right><FONT face=å®‹ä½“ size=2>èŒƒä¾‹ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ 
       size=2>#include&lt;stdio.h&gt;<BR>#include&lt;stdlib.h&gt;<BR>#define 
       NMEMB 50<BR>#define SIZE 10<BR>int compar (comst void *a,const void 
       *b)<BR>{<BR>return (strcmp((char *) a, (char *) 
       b));<BR>}<BR>main()<BR>{<BR>char 
-      data[NMEMB][SIZE]={¡°Linux¡±,¡±freebsd¡±,¡±solzris¡±,¡±sunos¡±,¡±windows¡±};<BR>char 
+      data[NMEMB][SIZE]={â€œLinuxâ€,â€freebsdâ€,â€solzrisâ€,â€sunosâ€,â€windowsâ€};<BR>char 
       key[80],*base,*offset;<BR>int i, 
-      nmemb=NMEMB,size=SIZE;<BR>for(i=1;i&lt;5;i++){<BR>fgets(key,sizeof9key),stdin);<BR>key[strlen(key)-1]=¡¯\0¡¯;<BR>base 
+      nmemb=NMEMB,size=SIZE;<BR>for(i=1;i&lt;5;i++){<BR>fgets(key,sizeof9key),stdin);<BR>key[strlen(key)-1]=â€™\0â€™;<BR>base 
       = data[0];<BR>offset = (char 
       *)lfind(key,base,&amp;nmemb,size,compar);<BR>if(offset 
-      ==NULL){<BR>printf(¡°%s not found!\n¡±,key);<BR>offset=(char *) 
-      lsearch(key,base,&amp;nmemb,size,compar);<BR>printf(¡°Add %s to data 
-      array\n¡±,offset);<BR>}else{<BR>printf(¡°found : %s 
-      \n¡±,offset);<BR>}<BR>}<BR>}<BR></FONT></TD></TR>
+      ==NULL){<BR>printf(â€œ%s not found!\nâ€,key);<BR>offset=(char *) 
+      lsearch(key,base,&amp;nmemb,size,compar);<BR>printf(â€œAdd %s to data 
+      array\nâ€,offset);<BR>}else{<BR>printf(â€œfound : %s 
+      \nâ€,offset);<BR>}<BR>}<BR>}<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>Ö´ĞĞ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>linux<BR>found:linux<BR>os/2<BR>os/2 not 
+      <DIV align=right><FONT face=å®‹ä½“ size=2>æ‰§è¡Œ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>linux<BR>found:linux<BR>os/2<BR>os/2 not 
       found!<BR>add os/2 to data array<BR>os/2<BR>found:os/2<BR></FONT></TD></TR>
   <TR>
-    <TD vAlign=top width=80>¡¡ 
-      <DIV align=right><BR><FONT face=ËÎÌå size=2><A 
+    <TD vAlign=top width=80>ã€€ 
+      <DIV align=right><BR><FONT face=å®‹ä½“ size=2><A 
       name=linuxc129></A></FONT></DIV></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2><BR></FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2><BR>qsort£¨ÀûÓÃ¿ìËÙÅÅĞò·¨ÅÅÁĞÊı×é£© </FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2><BR></FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2><BR>qsortï¼ˆåˆ©ç”¨å¿«é€Ÿæ’åºæ³•æ’åˆ—æ•°ç»„ï¼‰ </FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>Ïà¹Øº¯Êı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>bsearch<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>ç›¸å…³å‡½æ•° </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>bsearch<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>±íÍ·ÎÄ¼ş </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>#include&lt;stdlib.h&gt;<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>è¡¨å¤´æ–‡ä»¶ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>#include&lt;stdlib.h&gt;<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>¶¨Òåº¯Êı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>void qsort(void * base,size_t nmemb,size_t 
+      <DIV align=right><FONT face=å®‹ä½“ size=2>å®šä¹‰å‡½æ•° </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>void qsort(void * base,size_t nmemb,size_t 
       size,int ( * compar)(const void *, const void *));<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>º¯ÊıËµÃ÷ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå 
-      size=2>²ÎÊıbaseÖ¸ÏòÓûÅÅĞòµÄÊı×é¿ªÍ·µØÖ·£¬²ÎÊınmemb´ú±íÊı×éÖĞµÄÔªËØÊıÁ¿£¬Ã¿Ò»ÔªËØµÄ´óĞ¡ÔòÓÉ²ÎÊısize¾ö¶¨£¬×îºóÒ»Ïî²ÎÊıcomparÎªÒ»º¯ÊıÖ¸Õë£¬Õâ¸öº¯ÊıÓÃÀ´ÅĞ¶ÏÁ½¸öÔªËØ¼äµÄ´óĞ¡¹ØÏµ£¬Èô´«¸øcomparµÄµÚÒ»¸ö²ÎÊıËùÖ¸µÄÔªËØÊı¾İ´óÓÚµÚ¶ş¸ö²ÎÊıËùÖ¸µÄÔªËØÊı¾İÔò±ØĞë»Ø´«´óÓÚÁãµÄÖµ£¬Á½¸öÔªËØÊı¾İÏàµÈÔò»Ø´«0¡£<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>å‡½æ•°è¯´æ˜ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ 
+      size=2>å‚æ•°baseæŒ‡å‘æ¬²æ’åºçš„æ•°ç»„å¼€å¤´åœ°å€ï¼Œå‚æ•°nmembä»£è¡¨æ•°ç»„ä¸­çš„å…ƒç´ æ•°é‡ï¼Œæ¯ä¸€å…ƒç´ çš„å¤§å°åˆ™ç”±å‚æ•°sizeå†³å®šï¼Œæœ€åä¸€é¡¹å‚æ•°comparä¸ºä¸€å‡½æ•°æŒ‡é’ˆï¼Œè¿™ä¸ªå‡½æ•°ç”¨æ¥åˆ¤æ–­ä¸¤ä¸ªå…ƒç´ é—´çš„å¤§å°å…³ç³»ï¼Œè‹¥ä¼ ç»™comparçš„ç¬¬ä¸€ä¸ªå‚æ•°æ‰€æŒ‡çš„å…ƒç´ æ•°æ®å¤§äºç¬¬äºŒä¸ªå‚æ•°æ‰€æŒ‡çš„å…ƒç´ æ•°æ®åˆ™å¿…é¡»å›ä¼ å¤§äºé›¶çš„å€¼ï¼Œä¸¤ä¸ªå…ƒç´ æ•°æ®ç›¸ç­‰åˆ™å›ä¼ 0ã€‚<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>·µ»ØÖµ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2><BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>è¿”å›å€¼ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2><BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>¸½¼ÓËµÃ÷ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2><BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>é™„åŠ è¯´æ˜ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2><BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>·¶Àı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>#define nmemb 7<BR>#include 
+      <DIV align=right><FONT face=å®‹ä½“ size=2>èŒƒä¾‹ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>#define nmemb 7<BR>#include 
       &lt;stdlib.h&gt;<BR>int compar (const void *a ,const void *b)<BR>{<BR>int 
       *aa=(int * ) a,*bb = (int * )b;<BR>if( * aa &gt;* bb)return 1;<BR>if( * aa 
       == * bb) return 0;<BR>if( * aa &lt; *bb) return -1;<BR>}<BR>main( 
       )<BR>{<BR>int base[nmemb]={ 3,102,5,-2,98,52,18};<BR>int i;<BR>for ( i=0; 
-      i&lt;nmemb;i++)<BR>printf(¡°%d 
-      ¡°,base[i]);<BR>printf(¡°\n¡±);<BR>qsort(base,nmemb,sizeof(int),compar);<BR>for(i=0;i&lt;nmemb;i++)<BR>printf(¡°%d¡±base[i]);<BR>printf(¡°\n¡±);<BR>}<BR></FONT></TD></TR>
+      i&lt;nmemb;i++)<BR>printf(â€œ%d 
+      â€œ,base[i]);<BR>printf(â€œ\nâ€);<BR>qsort(base,nmemb,sizeof(int),compar);<BR>for(i=0;i&lt;nmemb;i++)<BR>printf(â€œ%dâ€base[i]);<BR>printf(â€œ\nâ€);<BR>}<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>Ö´ĞĞ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>3 102 5 -2 98 52 18<BR>-2 3 5 18 52 98 
+      <DIV align=right><FONT face=å®‹ä½“ size=2>æ‰§è¡Œ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>3 102 5 -2 98 52 18<BR>-2 3 5 18 52 98 
       102<BR></FONT></TD></TR>
   <TR>
-    <TD vAlign=top width=80>¡¡ 
-      <DIV align=right><BR><FONT face=ËÎÌå size=2><A 
+    <TD vAlign=top width=80>ã€€ 
+      <DIV align=right><BR><FONT face=å®‹ä½“ size=2><A 
       name=linuxc130></A></FONT></DIV></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2><BR></FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2><BR>rand£¨²úÉúËæ»úÊı£© </FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2><BR></FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2><BR>randï¼ˆäº§ç”Ÿéšæœºæ•°ï¼‰ </FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>Ïà¹Øº¯Êı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>srand£¬random£¬srandom<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>ç›¸å…³å‡½æ•° </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>srandï¼Œrandomï¼Œsrandom<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>±íÍ·ÎÄ¼ş </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>#include&lt;stdlib.h&gt;<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>è¡¨å¤´æ–‡ä»¶ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>#include&lt;stdlib.h&gt;<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>¶¨Òåº¯Êı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>int rand(void)<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>å®šä¹‰å‡½æ•° </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>int rand(void)<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>º¯ÊıËµÃ÷ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>rand()»á·µ»ØÒ»Ëæ»úÊıÖµ£¬·¶Î§ÔÚ0ÖÁRAND_MAX 
-      ¼ä¡£ÔÚµ÷ÓÃ´Ëº¯Êı²úÉúËæ»úÊıÇ°£¬±ØĞëÏÈÀûÓÃsrand()ÉèºÃËæ»úÊıÖÖ×Ó£¬Èç¹ûÎ´ÉèËæ»úÊıÖÖ×Ó£¬rand()ÔÚµ÷ÓÃÊ±»á×Ô¶¯ÉèËæ»úÊıÖÖ×ÓÎª1¡£¹ØÓÚËæ»úÊıÖÖ×ÓÇë²Î¿¼srand()¡£<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>å‡½æ•°è¯´æ˜ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>rand()ä¼šè¿”å›ä¸€éšæœºæ•°å€¼ï¼ŒèŒƒå›´åœ¨0è‡³RAND_MAX 
+      é—´ã€‚åœ¨è°ƒç”¨æ­¤å‡½æ•°äº§ç”Ÿéšæœºæ•°å‰ï¼Œå¿…é¡»å…ˆåˆ©ç”¨srand()è®¾å¥½éšæœºæ•°ç§å­ï¼Œå¦‚æœæœªè®¾éšæœºæ•°ç§å­ï¼Œrand()åœ¨è°ƒç”¨æ—¶ä¼šè‡ªåŠ¨è®¾éšæœºæ•°ç§å­ä¸º1ã€‚å…³äºéšæœºæ•°ç§å­è¯·å‚è€ƒsrand()ã€‚<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>·µ»ØÖµ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå 
-      size=2>·µ»Ø0ÖÁRAND_MAXÖ®¼äµÄËæ»úÊıÖµ£¬RAND_MAX¶¨ÒåÔÚstdlib.h£¬ÆäÖµÎª2147483647¡£<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>è¿”å›å€¼ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ 
+      size=2>è¿”å›0è‡³RAND_MAXä¹‹é—´çš„éšæœºæ•°å€¼ï¼ŒRAND_MAXå®šä¹‰åœ¨stdlib.hï¼Œå…¶å€¼ä¸º2147483647ã€‚<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>·¶Àı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>/* ²úÉú½éÓÚ1 µ½10 
-      ¼äµÄËæ»úÊıÖµ£¬´Ë·¶ÀıÎ´ÉèËæ»úÊıÖÖ×Ó£¬ÍêÕûµÄËæ»úÊı²úÉúÇë²Î¿¼<BR>srand£¨£©*/<BR>#include&lt;stdlib.h&gt;<BR>main()<BR>{<BR>int 
-      i,j;<BR>for(i=0;i&lt;10;i++)<BR>{<BR>j=1+(int)(10.0*rand()/(RAND_MAX+1.0));<BR>printf(¡°%d 
-      ¡°,j);<BR>}<BR>}<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>èŒƒä¾‹ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>/* äº§ç”Ÿä»‹äº1 åˆ°10 
+      é—´çš„éšæœºæ•°å€¼ï¼Œæ­¤èŒƒä¾‹æœªè®¾éšæœºæ•°ç§å­ï¼Œå®Œæ•´çš„éšæœºæ•°äº§ç”Ÿè¯·å‚è€ƒ<BR>srandï¼ˆï¼‰*/<BR>#include&lt;stdlib.h&gt;<BR>main()<BR>{<BR>int 
+      i,j;<BR>for(i=0;i&lt;10;i++)<BR>{<BR>j=1+(int)(10.0*rand()/(RAND_MAX+1.0));<BR>printf(â€œ%d 
+      â€œ,j);<BR>}<BR>}<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>Ö´ĞĞ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>9 4 8 8 10 2 4 8 3 6<BR>9 4 8 8 10 2 4 8 3 
+      <DIV align=right><FONT face=å®‹ä½“ size=2>æ‰§è¡Œ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>9 4 8 8 10 2 4 8 3 6<BR>9 4 8 8 10 2 4 8 3 
       6<BR></FONT></TD></TR>
   <TR>
-    <TD vAlign=top width=80>¡¡ 
-      <DIV align=right><BR><FONT face=ËÎÌå size=2><A 
+    <TD vAlign=top width=80>ã€€ 
+      <DIV align=right><BR><FONT face=å®‹ä½“ size=2><A 
       name=linuxc131></A></FONT></DIV></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2><BR></FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2><BR>srand£¨ÉèÖÃËæ»úÊıÖÖ×Ó£© </FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2><BR></FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2><BR>srandï¼ˆè®¾ç½®éšæœºæ•°ç§å­ï¼‰ </FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>Ïà¹Øº¯Êı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>rand£¬random srandom<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>ç›¸å…³å‡½æ•° </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>randï¼Œrandom srandom<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>±íÍ·ÎÄ¼ş </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>#include&lt;stdlib.h&gt;<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>è¡¨å¤´æ–‡ä»¶ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>#include&lt;stdlib.h&gt;<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>¶¨Òåº¯Êı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>void srand (unsigned int seed);<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>å®šä¹‰å‡½æ•° </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>void srand (unsigned int seed);<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>º¯ÊıËµÃ÷ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå 
-      size=2>srand()ÓÃÀ´ÉèÖÃrand()²úÉúËæ»úÊıÊ±µÄËæ»úÊıÖÖ×Ó¡£²ÎÊıseed±ØĞëÊÇ¸öÕûÊı£¬Í¨³£¿ÉÒÔÀûÓÃgeypid()»òtime(0)µÄ·µ»ØÖµÀ´µ±×öseed¡£Èç¹ûÃ¿´Îseed¶¼ÉèÏàÍ¬Öµ£¬rand()Ëù²úÉúµÄËæ»úÊıÖµÃ¿´Î¾Í»áÒ»Ñù¡£<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>å‡½æ•°è¯´æ˜ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ 
+      size=2>srand()ç”¨æ¥è®¾ç½®rand()äº§ç”Ÿéšæœºæ•°æ—¶çš„éšæœºæ•°ç§å­ã€‚å‚æ•°seedå¿…é¡»æ˜¯ä¸ªæ•´æ•°ï¼Œé€šå¸¸å¯ä»¥åˆ©ç”¨geypid()æˆ–time(0)çš„è¿”å›å€¼æ¥å½“åšseedã€‚å¦‚æœæ¯æ¬¡seedéƒ½è®¾ç›¸åŒå€¼ï¼Œrand()æ‰€äº§ç”Ÿçš„éšæœºæ•°å€¼æ¯æ¬¡å°±ä¼šä¸€æ ·ã€‚<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>·µ»ØÖµ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2><BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>è¿”å›å€¼ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2><BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>·¶Àı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>/* ²úÉú½éÓÚ1 µ½10 
-      ¼äµÄËæ»úÊıÖµ£¬´Ë·¶ÀıÓëÖ´ĞĞ½á¹û¿ÉÓërand£¨£©²ÎÕÕ*/<BR>#include&lt;time.h&gt;<BR>#include&lt;stdlib.h&gt;<BR>main()<BR>{<BR>int 
-      i,j;<BR>srand((int)time(0));<BR>for(i=0;i&lt;10;i++)<BR>{<BR>j=1+(int)(10.0*rand()/(RAND_MAX+1.0));<BR>printf(¡° 
-      %d ¡°,j);<BR>}<BR>}<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>èŒƒä¾‹ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>/* äº§ç”Ÿä»‹äº1 åˆ°10 
+      é—´çš„éšæœºæ•°å€¼ï¼Œæ­¤èŒƒä¾‹ä¸æ‰§è¡Œç»“æœå¯ä¸randï¼ˆï¼‰å‚ç…§*/<BR>#include&lt;time.h&gt;<BR>#include&lt;stdlib.h&gt;<BR>main()<BR>{<BR>int 
+      i,j;<BR>srand((int)time(0));<BR>for(i=0;i&lt;10;i++)<BR>{<BR>j=1+(int)(10.0*rand()/(RAND_MAX+1.0));<BR>printf(â€œ 
+      %d â€œ,j);<BR>}<BR>}<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>Ö´ĞĞ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>5 8 8 8 10 2 10 8 9 9<BR>2 9 7 4 10 3 2 10 8 
+      <DIV align=right><FONT face=å®‹ä½“ size=2>æ‰§è¡Œ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>5 8 8 8 10 2 10 8 9 9<BR>2 9 7 4 10 3 2 10 8 
       7<BR></FONT></TD></TR>
   <TR>
-    <TD vAlign=top width=80>¡¡ 
+    <TD vAlign=top width=80>ã€€ 
       <DIV align=right><BR></DIV></TD></TR></TBODY></TABLE></BODY></HTML>

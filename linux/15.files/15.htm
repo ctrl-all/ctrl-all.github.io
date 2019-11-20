@@ -1,145 +1,145 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <!-- saved from url=(0063)http://man.chinaunix.net/develop/c&c++/linux_c/function/15.html -->
 <HTML><HEAD><TITLE>Untitled Document</TITLE>
-<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
 <META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
-  <BODY><A target = "_top" href="../../">&lt;&lt; ·µ»Ø²©¿ÍÊ×Ò³ 
+  <BODY><A target = "_top" href="../../">&lt;&lt; è¿”å›åšå®¢é¦–é¡µ 
 </A><BR><BR>
 <TABLE width="100%">
   <TBODY>
   <TR>
-    <TD vAlign=top width=80>¡¡ 
-      <DIV align=right><BR><FONT face=ËÎÌå size=2><A 
+    <TD vAlign=top width=80>ã€€ 
+      <DIV align=right><BR><FONT face=å®‹ä½“ size=2><A 
       name=linuxc289></A></FONT></DIV></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2><BR></FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2><BR>getenv£¨È¡µÃ»·¾³±äÁ¿ÄÚÈİ£© </FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2><BR></FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2><BR>getenvï¼ˆå–å¾—ç¯å¢ƒå˜é‡å†…å®¹ï¼‰ </FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>Ïà¹Øº¯Êı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>putenv£¬setenv£¬unsetenv<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>ç›¸å…³å‡½æ•° </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>putenvï¼Œsetenvï¼Œunsetenv<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>±íÍ·ÎÄ¼ş </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>#include&lt;stdlib.h&gt;<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>è¡¨å¤´æ–‡ä»¶ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>#include&lt;stdlib.h&gt;<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>¶¨Òåº¯Êı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>char * getenv(const char *name);<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>å®šä¹‰å‡½æ•° </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>char * getenv(const char *name);<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>º¯ÊıËµÃ÷ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå 
-      size=2>getenv()ÓÃÀ´È¡µÃ²ÎÊıname»·¾³±äÁ¿µÄÄÚÈİ¡£²ÎÊınameÎª»·¾³±äÁ¿µÄÃû³Æ£¬Èç¹û¸Ã±äÁ¿´æÔÚÔò»á·µ»ØÖ¸Ïò¸ÃÄÚÈİµÄÖ¸Õë¡£»·¾³±äÁ¿µÄ¸ñÊ½Îªname£½value¡£<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>å‡½æ•°è¯´æ˜ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ 
+      size=2>getenv()ç”¨æ¥å–å¾—å‚æ•°nameç¯å¢ƒå˜é‡çš„å†…å®¹ã€‚å‚æ•°nameä¸ºç¯å¢ƒå˜é‡çš„åç§°ï¼Œå¦‚æœè¯¥å˜é‡å­˜åœ¨åˆ™ä¼šè¿”å›æŒ‡å‘è¯¥å†…å®¹çš„æŒ‡é’ˆã€‚ç¯å¢ƒå˜é‡çš„æ ¼å¼ä¸ºnameï¼valueã€‚<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>·µ»ØÖµ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå 
-  size=2>Ö´ĞĞ³É¹¦Ôò·µ»ØÖ¸Ïò¸ÃÄÚÈİµÄÖ¸Õë£¬ÕÒ²»µ½·ûºÏµÄ»·¾³±äÁ¿Ãû³ÆÔò·µ»ØNULL¡£<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>è¿”å›å€¼ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ 
+  size=2>æ‰§è¡ŒæˆåŠŸåˆ™è¿”å›æŒ‡å‘è¯¥å†…å®¹çš„æŒ‡é’ˆï¼Œæ‰¾ä¸åˆ°ç¬¦åˆçš„ç¯å¢ƒå˜é‡åç§°åˆ™è¿”å›NULLã€‚<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>·¶Àı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>#include&lt;stdlib.h&gt;<BR>mian()<BR>{<BR>char 
+      <DIV align=right><FONT face=å®‹ä½“ size=2>èŒƒä¾‹ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>#include&lt;stdlib.h&gt;<BR>mian()<BR>{<BR>char 
       *p;<BR>if((p = 
-    getenv(¡°USER¡±)))<BR>printf(¡°USER=%s\n¡±,p);<BR>}<BR></FONT></TD></TR>
+    getenv(â€œUSERâ€)))<BR>printf(â€œUSER=%s\nâ€,p);<BR>}<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>Ö´ĞĞ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>USER = root<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>æ‰§è¡Œ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>USER = root<BR></FONT></TD></TR>
   <TR>
-    <TD vAlign=top width=80>¡¡ 
-      <DIV align=right><BR><FONT face=ËÎÌå size=2><A 
+    <TD vAlign=top width=80>ã€€ 
+      <DIV align=right><BR><FONT face=å®‹ä½“ size=2><A 
       name=linuxc290></A></FONT></DIV></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2><BR></FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2><BR>putenv£¨¸Ä±ä»òÔö¼Ó»·¾³±äÁ¿£© </FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2><BR></FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2><BR>putenvï¼ˆæ”¹å˜æˆ–å¢åŠ ç¯å¢ƒå˜é‡ï¼‰ </FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>Ïà¹Øº¯Êı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>getenv£¬setenv£¬unsetenv<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>ç›¸å…³å‡½æ•° </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>getenvï¼Œsetenvï¼Œunsetenv<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>±íÍ·ÎÄ¼ş </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>#include4&lt;stdlib.h&gt;<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>è¡¨å¤´æ–‡ä»¶ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>#include4&lt;stdlib.h&gt;<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>¶¨Òåº¯Êı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>int putenv(const char * string);<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>å®šä¹‰å‡½æ•° </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>int putenv(const char * string);<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>º¯ÊıËµÃ÷ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå 
-      size=2>putenv()ÓÃÀ´¸Ä±ä»òÔö¼Ó»·¾³±äÁ¿µÄÄÚÈİ¡£²ÎÊıstringµÄ¸ñÊ½Îªname£½value£¬Èç¹û¸Ã»·¾³±äÁ¿Ô­ÏÈ´æÔÚ£¬Ôò±äÁ¿ÄÚÈİ»áÒÀ²ÎÊıstring¸Ä±ä£¬·ñÔò´Ë²ÎÊıÄÚÈİ»á³ÉÎªĞÂµÄ»·¾³±äÁ¿¡£<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>å‡½æ•°è¯´æ˜ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ 
+      size=2>putenv()ç”¨æ¥æ”¹å˜æˆ–å¢åŠ ç¯å¢ƒå˜é‡çš„å†…å®¹ã€‚å‚æ•°stringçš„æ ¼å¼ä¸ºnameï¼valueï¼Œå¦‚æœè¯¥ç¯å¢ƒå˜é‡åŸå…ˆå­˜åœ¨ï¼Œåˆ™å˜é‡å†…å®¹ä¼šä¾å‚æ•°stringæ”¹å˜ï¼Œå¦åˆ™æ­¤å‚æ•°å†…å®¹ä¼šæˆä¸ºæ–°çš„ç¯å¢ƒå˜é‡ã€‚<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>·µ»ØÖµ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>Ö´ĞĞ³É¹¦Ôò·µ»Ø0£¬ÓĞ´íÎó·¢ÉúÔò·µ»Ø-1¡£<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>è¿”å›å€¼ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>æ‰§è¡ŒæˆåŠŸåˆ™è¿”å›0ï¼Œæœ‰é”™è¯¯å‘ç”Ÿåˆ™è¿”å›-1ã€‚<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>´íÎó´úÂë </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>ENOMEM ÄÚ´æ²»×ã£¬ÎŞ·¨ÅäÖÃĞÂµÄ»·¾³±äÁ¿¿Õ¼ä¡£<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>é”™è¯¯ä»£ç  </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>ENOMEM å†…å­˜ä¸è¶³ï¼Œæ— æ³•é…ç½®æ–°çš„ç¯å¢ƒå˜é‡ç©ºé—´ã€‚<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>·¶Àı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>#include&lt;stdlib.h&gt;<BR>main()<BR>{<BR>char 
-      *p;<BR>if((p = getenv(¡°USER¡±)))<BR>printf(¡°USER 
-      =%s\n¡±,p);<BR>putenv(¡°USER=test¡±);<BR>printf(¡°USER+5s\n¡±,getenv(¡°USER¡±));<BR>}<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>èŒƒä¾‹ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>#include&lt;stdlib.h&gt;<BR>main()<BR>{<BR>char 
+      *p;<BR>if((p = getenv(â€œUSERâ€)))<BR>printf(â€œUSER 
+      =%s\nâ€,p);<BR>putenv(â€œUSER=testâ€);<BR>printf(â€œUSER+5s\nâ€,getenv(â€œUSERâ€));<BR>}<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>Ö´ĞĞ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>USER=root<BR>USER=root<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>æ‰§è¡Œ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>USER=root<BR>USER=root<BR></FONT></TD></TR>
   <TR>
-    <TD vAlign=top width=80>¡¡ 
-      <DIV align=right><BR><FONT face=ËÎÌå size=2><A 
+    <TD vAlign=top width=80>ã€€ 
+      <DIV align=right><BR><FONT face=å®‹ä½“ size=2><A 
       name=linuxc291></A></FONT></DIV></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2><BR></FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2><BR>setenv£¨¸Ä±ä»òÔö¼Ó»·¾³±äÁ¿£© </FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2><BR></FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2><BR>setenvï¼ˆæ”¹å˜æˆ–å¢åŠ ç¯å¢ƒå˜é‡ï¼‰ </FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>Ïà¹Øº¯Êı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>getenv£¬putenv£¬unsetenv<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>ç›¸å…³å‡½æ•° </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>getenvï¼Œputenvï¼Œunsetenv<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>±íÍ·ÎÄ¼ş </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>#include&lt;stdlib.h&gt;<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>è¡¨å¤´æ–‡ä»¶ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>#include&lt;stdlib.h&gt;<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>¶¨Òåº¯Êı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>int setenv(const char *name,const char * 
+      <DIV align=right><FONT face=å®‹ä½“ size=2>å®šä¹‰å‡½æ•° </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>int setenv(const char *name,const char * 
       value,int overwrite);<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>º¯ÊıËµÃ÷ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå 
-      size=2>setenv()ÓÃÀ´¸Ä±ä»òÔö¼Ó»·¾³±äÁ¿µÄÄÚÈİ¡£²ÎÊınameÎª»·¾³±äÁ¿Ãû³Æ×Ö·û´®¡£<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>å‡½æ•°è¯´æ˜ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ 
+      size=2>setenv()ç”¨æ¥æ”¹å˜æˆ–å¢åŠ ç¯å¢ƒå˜é‡çš„å†…å®¹ã€‚å‚æ•°nameä¸ºç¯å¢ƒå˜é‡åç§°å­—ç¬¦ä¸²ã€‚<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>²ÎÊı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå 
-      size=2>valueÔòÎª±äÁ¿ÄÚÈİ£¬²ÎÊıoverwriteÓÃÀ´¾ö¶¨ÊÇ·ñÒª¸Ä±äÒÑ´æÔÚµÄ»·¾³±äÁ¿¡£Èç¹ûoverwrite²»Îª0£¬¶ø¸Ã»·¾³±äÁ¿Ô­ÒÑÓĞÄÚÈİ£¬ÔòÔ­ÄÚÈİ»á±»¸ÄÎª²ÎÊıvalueËùÖ¸µÄ±äÁ¿ÄÚÈİ¡£Èç¹ûoverwriteÎª0£¬ÇÒ¸Ã»·¾³±äÁ¿ÒÑÓĞÄÚÈİ£¬Ôò²ÎÊıvalue»á±»ºöÂÔ¡£<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>å‚æ•° </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ 
+      size=2>valueåˆ™ä¸ºå˜é‡å†…å®¹ï¼Œå‚æ•°overwriteç”¨æ¥å†³å®šæ˜¯å¦è¦æ”¹å˜å·²å­˜åœ¨çš„ç¯å¢ƒå˜é‡ã€‚å¦‚æœoverwriteä¸ä¸º0ï¼Œè€Œè¯¥ç¯å¢ƒå˜é‡åŸå·²æœ‰å†…å®¹ï¼Œåˆ™åŸå†…å®¹ä¼šè¢«æ”¹ä¸ºå‚æ•°valueæ‰€æŒ‡çš„å˜é‡å†…å®¹ã€‚å¦‚æœoverwriteä¸º0ï¼Œä¸”è¯¥ç¯å¢ƒå˜é‡å·²æœ‰å†…å®¹ï¼Œåˆ™å‚æ•°valueä¼šè¢«å¿½ç•¥ã€‚<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>·µ»ØÖµ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>Ö´ĞĞ³É¹¦Ôò·µ»Ø0£¬ÓĞ´íÎó·¢ÉúÊ±·µ»Ø-1¡£<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>è¿”å›å€¼ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>æ‰§è¡ŒæˆåŠŸåˆ™è¿”å›0ï¼Œæœ‰é”™è¯¯å‘ç”Ÿæ—¶è¿”å›-1ã€‚<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>´íÎó´úÂë </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>ENOMEM ÄÚ´æ²»×ã£¬ÎŞ·¨ÅäÖÃĞÂµÄ»·¾³±äÁ¿¿Õ¼ä<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>é”™è¯¯ä»£ç  </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>ENOMEM å†…å­˜ä¸è¶³ï¼Œæ— æ³•é…ç½®æ–°çš„ç¯å¢ƒå˜é‡ç©ºé—´<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>·¶Àı </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>#include&lt;stdlib.h&gt;<BR>main()<BR>{<BR>char * 
-      p;<BR>if((p=getenv(¡°USER¡±)))<BR>printf(¡°USER 
-      =%s\n¡±,p);<BR>setenv(¡°USER¡±,¡±test¡±,1);<BR>printf(¡°USER=%s\n¡±,getenv(¡°USEr¡±));<BR>unsetenv(¡°USER¡±);<BR>printf(¡°USER=%s\n¡±,getenv(¡°USER¡±));<BR>}<BR></FONT></TD></TR>
+      <DIV align=right><FONT face=å®‹ä½“ size=2>èŒƒä¾‹ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>#include&lt;stdlib.h&gt;<BR>main()<BR>{<BR>char * 
+      p;<BR>if((p=getenv(â€œUSERâ€)))<BR>printf(â€œUSER 
+      =%s\nâ€,p);<BR>setenv(â€œUSERâ€,â€testâ€,1);<BR>printf(â€œUSER=%s\nâ€,getenv(â€œUSErâ€));<BR>unsetenv(â€œUSERâ€);<BR>printf(â€œUSER=%s\nâ€,getenv(â€œUSERâ€));<BR>}<BR></FONT></TD></TR>
   <TR>
     <TD vAlign=top width=80>
-      <DIV align=right><FONT face=ËÎÌå size=2>Ö´ĞĞ </FONT></DIV></TD>
-    <TD><FONT face=ËÎÌå size=2>USER = root<BR>USER = test<BR>USER = 
+      <DIV align=right><FONT face=å®‹ä½“ size=2>æ‰§è¡Œ </FONT></DIV></TD>
+    <TD><FONT face=å®‹ä½“ size=2>USER = root<BR>USER = test<BR>USER = 
       (null)<BR></FONT></TD></TR>
   <TR>
-    <TD vAlign=top width=80>¡¡ 
+    <TD vAlign=top width=80>ã€€ 
       <DIV align=right><BR></DIV></TD></TR></TBODY></TABLE></BODY></HTML>
